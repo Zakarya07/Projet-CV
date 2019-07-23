@@ -1,0 +1,555 @@
+
+
+/* --------------------------------------------------------------------------------------------------------------------------------- */
+
+/* 
+  ##Device = Tablets, Ipads (paysage)
+  ##Screen = B/w 768px to 1024px
+*/
+
+@media screen and (max-width: 1024px) {
+
+
+    html, body {
+      margin: 0;
+      padding: 0;
+  }
+
+  
+  .container{
+    width:960px;
+  }
+
+  #portfolio {
+    text-align: left;
+    width: 100%;
+    padding: 11px 0 0 28px;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-left: 130px;
+    font-size: 15px;
+    -webkit-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;
+    padding-top: 30px;
+  }
+
+
+  header nav li {
+    text-transform: uppercase;
+    padding-top: 11px;
+    margin-top: 20px;
+    margin-right: 32px;
+    font-size: 14px;
+    font-weight: thin;
+  }
+
+
+  #entetediv1{
+    display: none;
+  }
+
+  #entetediv2{
+    display: none
+  }
+
+  #knowledge-items{
+    display: flex;
+  }
+
+
+
+
+
+  header {
+    background-image: url(./images/test.jpg);
+    width: 100% ;
+    height: 604px;
+    background-size: cover;
+    background-position: center;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  }
+
+  #infos {
+    background: #000000;
+    width: auto;
+    height: auto;}
+    
+    .contenu {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+      justify-content: space-between;
+      -webkit-box-align: start;
+      -ms-flex-align: start;
+      margin-top: 0;
+      align-items: flex-start;
+      flex-wrap: wrap;
+  }
+
+  .photo {
+    width: 50%;
+    position: relative;
+  }
+
+  .section_intro{
+      background-color: #f8f8f8;
+      margin-left:0;
+  } 
+
+  #elkhattabi {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -ms-flex-wrap: nowrap;
+    flex-wrap: nowrap;
+    border: 1px solid rgb(136, 124, 124);
+    width: 100%;
+  }
+
+  #coordonnees{
+
+    display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+      flex-direction: column;
+      width: 50%;
+      text-align: initial;
+      height: auto;
+      font-style: italic;
+      background-color: rgb(0, 0, 0);
+      color: white;
+      border-radius: 0px 0px 5px 5px;
+      padding-top: 25px;
+  }
+
+  #infos div#coordonnees p {
+    color: rgb(255, 255, 255);
+    font-weight: normal;
+    padding-bottom: 37.5px;
+    font-size: larger;
+  }
+
+
+
+  .photo .bg {
+    display: none;
+  }
+
+  #infos img {
+    width: 85%;
+    height: auto;
+    border-radius: 3px;
+  }
+  #myBtn {
+    display: none;
+    position: fixed;
+    bottom: 45px;
+    right: 42px;
+    z-index: 99;
+    outline: none;
+    background-color:rgba(37, 37, 39,0.2);
+    color: white;
+    cursor: auto;
+    width: 70px;
+    height:40px;
+    font-weight: thin;
+  }
+
+  .fa-chevron-up {
+    font-size: 30px;
+    width: 28px;
+    text-align: center;
+
+  }
+
+  #elkhattabi .photo{
+    height: auto;
+  }
+  #importante {
+    flex-direction: column;
+  }
+  
+  #formulaire, #zakarya{
+    margin-left: 0;
+    width:100%;
+  }
+  
+  #send{
+    margin-bottom: 0;
+    width:auto;
+  }
+  
+  
+
+
+}/*fin 1024px*/
+
+
+
+/* -------------- ipad portrait-------------  */
+@media screen and (max-width: 768px) {
+
+
+*{
+  font-family: "Montserrat";
+}
+
+  .container {
+    width: 720px;
+  }
+
+  .progress-bar {
+    width: 60%;
+  }
+.skill-items{
+  width: 100%;
+}
+
+#portfolio{
+  margin-left: 0;
+  text-align:center;
+  padding: 11px 0 0 0px;
+  font-size: 16px;
+
+}
+header nav ul {
+  margin-right: 0;
+  display: flex; 
+  justify-content: center;
+}
+header nav li{
+  margin-right: 20px;
+ 
+ }
+
+header nav{
+  display: flex;
+  flex-direction: column;
+  height: 120px;
+}
+
+
+#download, #message{
+  width: 80%;
+  margin: 10px auto;
+
+}
+
+.w3-light-grey{
+  width: 80%;
+  left:10%;
+}
+
+
+
+
+}/*fin*/
+/* ---------------------------------------------------------------------------------------------------------------------- */
+
+
+/* 
+  ##Device = Most of the Smartphones Mobiles (Portrait)
+  ##Screen = B/w 320px to 479px
+*/
+
+@media screen and (max-width: 600px) {
+
+
+  *{
+    font-family: "Montserrat";
+  }
+  
+  header{
+    width:auto;
+    height: 650px;
+  }
+   header nav li {
+    font-size: 12px;
+    text-align: center;
+    text-decoration: none;
+    margin-top: 0;
+    padding-top: 0;
+   }
+
+
+   header nav ul li{
+     border-bottom:0;
+     margin-bottom: 5%;
+     display: flex;
+     font-size: 14px;
+
+   }
+
+   #krown{
+     width: auto;
+     margin-right: 0;
+   }
+
+
+
+  .container{
+    width: 80%;
+  }
+
+  .titre {
+display:none;
+  }
+
+  
+  header nav {
+    display: flex;
+    flex-direction: column;
+    height: auto;
+  }
+
+#elkhattabi{
+  display: flex;
+  flex-direction: column;
+
+}
+
+#experiences{
+  padding-bottom: 0;
+}
+
+#portfolio{
+  font-size:large;
+  font-style: normal;
+}
+
+
+#infos{
+  padding-bottom: 0;
+}
+
+#infos img{
+  width: 100%;
+
+}
+
+.photo{
+  width: 100%;
+}
+
+
+#section_hobbies{
+  margin-top: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.section_intro p{
+  padding: 10px;
+}
+
+
+#hobby{
+  width: auto;
+} 
+
+#langues{
+width: auto;
+margin-bottom: 50px;
+}
+
+#zakarya{
+  flex-direction: column;
+  
+}
+.perso{
+  font-size: large;
+}
+
+.c100.small{
+  font-size: 120px;
+  margin: 25px auto;
+
+}
+
+
+#infos div#coordonnees p{
+  font-size: medium;
+}
+
+
+
+#dwld{
+  background-color: #4ab9b2;
+  flex-direction:column;
+}
+
+
+#hobby p{
+  color: white !important;
+}
+
+#coordonnees{
+  width: auto;
+}
+
+
+.w3-light-grey{
+  height: 17px;
+  background-color: white;
+
+}
+
+.english{
+  height: 16.7px;
+  background-color: black;
+  border-right: 1.5px solid #4ab9b2;
+
+}
+
+
+.spain{
+  background-color: black;
+  border-right: 1.5px solid #4ab9b2;
+
+  height: 16.7px;
+}
+
+
+.arabic{
+  height: 16.7px;
+  background-color: black;
+  border-right: 1.5px solid #4ab9b2;
+}
+
+
+.contact-btn a {
+font-size: small;
+border-radius: 0;
+
+}
+
+
+
+
+
+
+#section_hobbies h3{
+  color: white;
+
+}
+section#timeline article{
+  flex-direction: column;
+}
+section#timeline article div.inner {
+  display: flex!important;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  float: none !important;
+  width: 100%;
+}
+
+section#timeline article div.inner span.date {
+  float: none;
+  left: unset;
+  position: relative;
+  margin: 0 0 20px;
+}
+section#timeline article div.inner .around, section#timeline article:nth-child(2n+2) div.inner .around {
+  float: none;
+  left: unset;
+  width: 100% !important;
+  margin: 0 0 20px;
+}
+
+section#timeline article div.inner h2, section#timeline article div.inner h2:after{
+  font-size: 1.1em;
+}
+
+
+
+
+
+.around h2:after{
+  display: none;
+}
+
+
+#myBtn{
+  width: 35px;
+  height: 25px;
+}
+
+.fa-chevron-up{
+  font-size:20px;
+
+}
+
+header nav ul{ 
+  flex-direction: row;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 1px;
+  margin-top: 20px
+}
+ header h1{
+   font-size: 1.8em;
+   padding-top: 250px;
+ }
+
+ header h2{
+   font-size: 1.1em;
+ }
+
+ #knowledge-items{
+   height: auto;
+   margin-bottom: auto;
+   margin-top: none;
+   padding-top: 10%;
+  margin-top: 0;
+ }
+
+
+ .knowledge-item {
+  width: 100%;
+  text-align: center;
+  margin-bottom: 40px;
+  display: flex;
+  
+}
+
+#proverbe{
+  margin-bottom:15%;
+  font-size: 1.1em;
+}
+
+.contact-btn h1{
+  font-size: large;
+  padding:10px;
+}
+
+.contact-btn a{
+  width: auto;
+  font-size: auto;
+}
+
+footer div h3{
+
+  font-size: 1.2em;
+  margin: 20px auto;
+}
+
+
+#top-left, #top-right{
+  min-height: 0;
+  margin-bottom: 0;
+}
+
+
+
+}   /*fin iphone*/
