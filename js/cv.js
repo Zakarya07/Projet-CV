@@ -18,12 +18,12 @@ function topFunction() {
   document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
 }
 
-function changeHeadingBg(width){
-  document.getElementById("entetediv1").style.width = width;
-}
+// function changeHeadingBg(width){
+//   document.getElementById("entetediv1").style.width = width;
+// }
 
-function erase(efface){
-  document.getElementById("entetediv1").style.background= efface;
-}
+// function erase(efface){
+//   document.getElementById("entetediv1").style.background= efface;
+// }
 
 
