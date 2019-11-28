@@ -15,7 +15,7 @@ a {
 
 /*-------------------------- En tête -----------------------------*/
 header {
-  background-image: url("../images/test.jpg");
+  background-image: url("../Images/test.jpg");
   width: 100%;
   height: 100%;
   background-size: cover;
@@ -211,7 +211,7 @@ body {
   position: relative; }
 
 .photo .bg {
-  background: url(../images/photo-frame.png) bottom center no-repeat;
+  background: url('/Images/photo-frame.png')bottom center no-repeat;
   background-size: contain;
   z-index: 10;
   height: 420px;
@@ -729,7 +729,7 @@ section#timeline article div.inner h2, section#timeline article div.inner h2:aft
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   justify-content: center;
-  background: url(../Images/zcontact.jpg);
+  background: url('../Images/zcontact.jpg');
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
