@@ -211,6 +211,7 @@ body {
   position: relative; }
 
 .photo .bg {
+
   background: url('/Images/photo-frame.png')bottom center no-repeat;
   background-size: contain;
   z-index: 10;
