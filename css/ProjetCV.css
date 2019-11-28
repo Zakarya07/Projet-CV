@@ -15,7 +15,7 @@ a {
 
 /*-------------------------- En tête -----------------------------*/
 header {
-  background-image: url("../images/test.jpg");
+  background-image: url("../Images/test.jpg");
   width: 100%;
   height: 100%;
   background-size: cover;
@@ -211,7 +211,7 @@ body {
   position: relative; }
 
 .photo .bg {
-  background: url(../images/photo-frame.png) bottom center no-repeat;
+  background: url(../Images/photo-frame.png) bottom center no-repeat;
   background-size: contain;
   z-index: 10;
   height: 420px;
