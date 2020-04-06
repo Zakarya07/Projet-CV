@@ -79,10 +79,10 @@ header h1 {
   color: #fff;
   /* font-style: italic; */
   font-weight: 500;
-  font-size: 3.5em;
+  font-size: 3.3em;
   font-family: 'Montserrat', sans-serif;
   letter-spacing: 1.5px;
-animation: big 4.9s ease-in;
+animation: big 1.9s ease-in;
 }
 
 header h2 {
@@ -104,7 +104,7 @@ nav {
   width: 100%;
   z-index: 100;
   background-color: rgba(0, 0, 0, 0.91);
-  border-bottom: 1.5px solid white; }
+}
 
 header nav li {
   text-transform: uppercase;
@@ -882,8 +882,10 @@ textarea {
   margin-bottom: 60px; }
 
 #hr2 {
-  width: 100%;
-  margin-top: 10px; }
+  border: none;
+  background-color:rgb(8, 117, 103);
+  margin-top: 10px; 
+}
 
 #cprt {
   text-align: center;
@@ -1000,8 +1002,9 @@ footer > div > h3 {
 
 /*----------------------font-awesome--------------------*/
 .fa-chevron-up {
-  font-size: 11px;
-  width: 20px; }
+  font-size: 13px;
+  width: 20px;
+ }
 
 .fa-phone {
   border-radius: 4px;
@@ -1337,22 +1340,25 @@ footer > div > h3 {
   right: 42px;
   z-index: 99;
   outline: none;
-  background-color: rgba(37, 37, 39, 0.2);
+  background-color: rgba(37, 37, 39, 0.32);
   color: white;
   cursor: auto;
   font-size: 14px;
-  width: 30px;
-  height: 30px;
+  width: 32px;
+  height: 32px;
   font-weight: thin; 
-border: none;
+  border: none;
 }
 
 #myBtn:hover {
   -webkit-transition: 0.5s;
   -o-transition: 0.5s;
   transition: 0.5s;
-  color: rgb(19, 19, 19);
-  background-color: #e76c24; }
+  color: rgb(243, 242, 242);
+  background-color: #101011;
+  
+  
+}
 
 
 
@@ -1366,7 +1372,7 @@ border: none;
 }
     to{
 opacity:1;
-transform: scale(1.1);
+transform: scale(1);
 color:whitesmoke ;
 
 }
