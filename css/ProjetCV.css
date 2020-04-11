@@ -448,12 +448,12 @@ section#timeline:before {
   top: 0;
   margin: auto;
   width: 3px;
-  height: 91%;
+  height: 100%;
   background: rgb(0, 0, 0);
 }
 
 section#timeline article {
-  width: 100%;
+  width: 55vw;
   margin: 25px auto;
   position: relative;
 }
@@ -465,9 +465,7 @@ section#timeline article:after {
 }
 
 section#timeline article div.inner {
-  width: 43%;
-  float: left;
-  margin: 5px 0 0 0;
+  margin: 85px 0 0 0;
   border-radius: 6px;
 }
 
@@ -487,7 +485,7 @@ section#timeline article div.inner span.date {
   font-weight: 700;
   text-transform: capitalize;
   color: rgba(0, 0, 0, 0.863);
-  background:linear-gradient(45deg,lightblue,rgb(5, 5, 73) 55%)
+  background:linear-gradient(45deg,rgb(113, 145, 156),rgb(15, 15, 168) 55%)
 }
   section#timeline article div.inner span.date:hover,
   section#timeline article div.inner:hover span.date {
@@ -519,45 +517,43 @@ section#timeline article div.inner span.date {
   }
 
   section#timeline article div.inner div.div-bg-title-date {
-    padding-top: 15px;
-    padding-bottom: 5px;
     margin: 0;
-    background: linear-gradient(55deg,orange,yellow);
     font-size: 20px;
     letter-spacing: 1px;
     position: relative;
     text-transform: uppercase;
     font-size: 20px;
     color: #2d2020;
-    height: 20vh;
     font-weight: 500px;
   }
 
   section#timeline article div.inner div.div-bg-title-date:after {
     content: '';
     position: absolute;
-    top: 5px;
-    background: linear-gradient(-55deg,orange,yellow);
-    right: -14.2px;
-    width: 25px;
-    height: 25px !important;
-    border: 1px solid black;
-    -webkit-transform: rotate(-45deg);
+    top: -18px;
+    background: linear-gradient(to bottom right ,black 48%,transparent 50%);
+    right: 402px;
+    width: 35px;
+    height: 35px !important;
+    /* border: 1px solid black; */
+    transform: rotate(45deg);
     border-top: none;
     border-left: none;
 }
+
+
 
 section#timeline article:nth-child(2n+2) div.inner div.div-bg-title-date:after {
   border-top: 1px solid black;
   border-left: 1px solid black;
   border-bottom: none !important;
   border-right: none !important;
-  background: linear-gradient(-55deg,orange,yellow);
-
-  left: -14.1px;
+  left: 404px;
   text-align: center;
   border: 1px solid black;
+  background: linear-gradient(to bottom right ,black 46.5%, transparent 50%);
 }
+
 
   section#timeline article div.inner p {
     padding: 15px;
@@ -613,19 +609,48 @@ section#timeline article:nth-child(2n+2) div.inner div.div-bg-title-date:after {
     text-align: center;
   }
 
-  section#timeline article div.inner div.div-bg-title-date,
-  section#timeline article div.inner div.div-bg-title-date:after {
+  section#timeline article div.inner div.div-bg-title-date, section#timeline article div.inner div.div-bg-title-date:after {
     text-align: center;
     color: black;
     font-weight: bold;
-  }
+    height: 35vh;
+}
 
 
 .div-date{
 color: white;
 text-transform: uppercase;
-background-color: rgb(250, 145, 163);
+background-color: rgb(218, 59, 86);
+width: 35%;
+position:absolute;
+z-index: 1;
 }
+
+/* .div.date h1{
+
+} */
+
+.img-contain {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  position: relative;
+  align-items: center;
+}
+
+.img-contain img{
+  height: 100%;
+  width: 100%;
+}
+.img-contain h1{
+  position:absolute;
+  color: white;
+  font-size: 5vh;
+}
+
+
 
   /* --------------------Section Compétences ------------------------ */
   #knowledge {
@@ -1587,8 +1612,6 @@ background-color: rgb(250, 145, 163);
     -webkit-transition: 0.5s;
     -o-transition: 0.5s;
     transition: 0.5s;
-
-
   }
 
 
