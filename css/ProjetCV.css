@@ -447,14 +447,14 @@ section#timeline:before {
   left: 50%;
   top: 0;
   margin: auto;
-  width: 3px;
+  width: 4px;
   height: 100%;
   background: rgb(0, 0, 0);
 }
 
 section#timeline article {
-  width: 55vw;
-  margin: 25px auto;
+  width: 50vw;
+  margin: 8vh auto;
   position: relative;
 }
 
@@ -467,6 +467,7 @@ section#timeline article:after {
 section#timeline article div.inner {
   margin: 85px 0 0 0;
   border-radius: 6px;
+  float: left;
 }
 
 /* ---------------------------------- Pour les ronds de la time line--------------------------------------------  */
@@ -485,8 +486,10 @@ section#timeline article div.inner span.date {
   font-weight: 700;
   text-transform: capitalize;
   color: rgba(0, 0, 0, 0.863);
-  background:linear-gradient(45deg,rgb(113, 145, 156),rgb(15, 15, 168) 55%)
+  background:linear-gradient(45deg,rgb(89, 114, 122),rgb(3, 3, 26) 55%)
 }
+
+
   section#timeline article div.inner span.date:hover,
   section#timeline article div.inner:hover span.date {
     background: black;
@@ -540,6 +543,7 @@ section#timeline article div.inner span.date {
     border-top: none;
     border-left: none;
 }
+
 
 
 
@@ -613,15 +617,18 @@ section#timeline article:nth-child(2n+2) div.inner div.div-bg-title-date:after {
     text-align: center;
     color: black;
     font-weight: bold;
-    height: 35vh;
+    height: 45vh;
 }
 
 
 .div-date{
 color: white;
 text-transform: uppercase;
-background-color: rgb(218, 59, 86);
-width: 35%;
+background-color: rgb(250, 59, 123);
+padding: 6px 0;
+width: 25%;
+font-size: 1rem;
+height: 4vh;
 position:absolute;
 z-index: 1;
 }
@@ -629,6 +636,7 @@ z-index: 1;
 /* .div.date h1{
 
 } */
+
 
 .img-contain {
   height: 100%;
@@ -638,8 +646,8 @@ z-index: 1;
   justify-content: center;
   position: relative;
   align-items: center;
+  background: linear-gradient(red,yellow);
 }
-
 .img-contain img{
   height: 100%;
   width: 100%;
@@ -650,7 +658,9 @@ z-index: 1;
   font-size: 5vh;
 }
 
+.paragraph_contain{
 
+}
 
   /* --------------------Section Compétences ------------------------ */
   #knowledge {
@@ -682,9 +692,7 @@ z-index: 1;
     margin-top: 85px;
   }
 
-  /* #entetediv3 {
-
-} */
+ 
   .skill-items {
     display: -webkit-box;
     display: -ms-flexbox;
