@@ -430,8 +430,7 @@
       font-weight: 500; }
  
       .contact-btn {
-        display: -webkit-box;
-        display: -ms-flexbox;
+  
         display: flex;
         -webkit-box-orient: vertical;
         -webkit-box-direction: normal;
@@ -440,7 +439,7 @@
         -webkit-box-pack: center;
         -ms-flex-pack: center;
         justify-content: center;
-        background: url(../Images/zcontact.jpg);
+        background: url("../Images/zcontact.jpg");
         background-size: cover;
         background-repeat: no-repeat;
         background-position: center;
