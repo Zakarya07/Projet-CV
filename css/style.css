@@ -185,52 +185,47 @@ header h2 {
 
 #elkhattabi {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   flex-wrap: wrap;
-  /* width: 28%; */
+  flex-grow: 6;
 }
 
 .photo {
+  background-image: url('../Images/bg.JPG');
+  background-size: cover;
+  background-repeat: no-repeat;
   width: 100%;
   height: 420px;
   position: relative;
 }
 
 .photo .bg {
-  background: url('../Images/photo-frame.png') bottom center no-repeat;
-  background-size: contain;
+  background: url("../Images/photo-frame.png") bottom center no-repeat;
+  background-size: cover;
   z-index: 10;
-  height: 420px;
+  height: 100%;
   position: absolute;
-  top: 0;
+  bottom: 0px;
   width: 100%;
-
 }
 
 #coordonnees {
   display: flex;
   flex-direction: column;
   width: 100%;
-  text-align: initial;
   height: auto;
   font-style: italic;
   color: black;
   background-color: white;
-  border-radius: 0px 0px 5px 5px;
-  padding: 81px 0;
-}
-
-#coordonnees p:not(span) {
-  padding-top: 7px;
-  padding-bottom: 7px;
-  font-style: italic;
+   padding:5% 0;
 }
 
 #coordonnees span:not(p) {
   font-weight: bold;
-  /* color: red; */
+  color: red;
 }
 
+  
 #coordonnees hr {
   width: 80%;
   margin: 0 auto 2%;
@@ -243,42 +238,37 @@ header h2 {
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
-  padding-bottom: 20px;
+  align-items: center;
+  min-height: 8vh;
 }
 
 #message {
-  border-radius: 1px;
-  padding-left: 50px;
-  display: inline-block;
-  width: 340px;
-  height: 6vh;
+  border-radius: 1%;
+  width: 40%;
+  height: 5vh;
   text-align: center;
-  padding: 12px 15px;
+  padding:10px;
   background: #7a7186;
-  margin-top: 25px;
   color: white;
   text-decoration: none;
   font-weight: bold;
+
 }
 
 #message:hover {
   background-color: #d4d415;
-  -webkit-transition: 2.2s;
-  -o-transition: 2.2s;
-  transition: 2.2s;
+  transition: 1s;
   color: black;
 }
 
 #download {
-  border-radius: 1px;
-  padding-left: 50px;
+  border-radius: 1%;
   display: inline-block;
-  width: 340px;
-  height: 6vh;
+  width: 40%;
+  height: 5vh;
   text-align: center;
-  padding: 12px 15px;
+  padding: 10px;
   background: #5125ad;
-  margin-top: 25px;
   color: white;
   text-decoration: none;
 }
@@ -286,17 +276,7 @@ header h2 {
 #download:hover {
   background-color: #b131a0;
   color: black;
-  -webkit-transition: 1.1s;
-  -o-transition: 1.1s;
-  transition: 1.1s;
-}
-
-.contenu div>h3:not(:first-child) {
-  margin-top: 20px;
-}
-
-.contenu div>h3 {
-  margin-bottom: 20px;
+  transition: 1s;
 }
 
 section#infos {
@@ -306,33 +286,18 @@ section#infos {
   padding: 2% 0;
 }
 
-section#infos img {
-  width: 100%;
-  height: 420px;
-  border-radius: 3px;
-}
 
 section#infos h3 {
   text-transform: capitalize;
-  font-size: 30px;
-  text-align: left;
-  margin-bottom: 30px;
+  font-size: 1.8em;
   text-align: center;
-  padding-top: 25px;
   color: black;
   font-style: normal;
-  padding-bottom: 10px;
-  font-style: italic;
   text-decoration: underline;
   font-weight: 500;
+  margin: 0;
 }
 
-#infos p {
-  color: black;
-  font-weight: 700;
-  text-align: center;
-  padding: 17px;
-}
 
 #infos div#coordonnees p {
   color: black;
@@ -353,15 +318,19 @@ section#infos h3 {
 }
 
 .section_intro {
-  /* margin-left: 30px; */
+  display: flex;
+  flex-direction: column;
   background-color: #ffffff;
-  /* width: 68%; */
   border: 2px solid black;
+  flex-grow:1;
 }
 
 .section_intro p {
   padding-bottom: 10px;
   word-spacing: 1px;
+  color: black;
+  text-align: center;
+  font-weight: bold;
 }
 
 .section_intro p a {
@@ -453,11 +422,11 @@ section#timeline article div.inner {
 /* ------------ Pour les ronds de la time line---------------*/
 section#timeline article div.inner span.badge_icon_contain {
   display: flex;
-  width: 3vw;
-  height: 6vh;
+  width: 2.8vw;
+  height: 5.6vh;
   position: absolute;
   top: 1%;
-  left: calc(50% - 1.5vw);
+  left: calc(50% - 1.4vw);
   border-radius: 30%;
   color: white;
   background: linear-gradient(45deg, rgb(89, 114, 122), rgb(3, 3, 26) 55%);
@@ -673,10 +642,9 @@ section#knowledge {
   flex-direction: row;
   justify-content: space-around;
   background-color: #4ab9b2;
+  align-items: stretch;
   color: black;
-  height: auto;
-  margin-top: 30px;
-  padding-bottom: 20px;
+  position: relative;
 }
 
 #section_hobbies h3 {
@@ -698,19 +666,23 @@ section#knowledge {
 }
 
 #hobby {
-  -webkit-box-align: stretch;
-  -ms-flex-align: stretch;
-  align-items: stretch;
-  font-size: 20px;
-  padding: auto;
-  width: 50%;
+  font-size: 1.2em;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
 }
 
-#hobby h3 {
-  margin-bottom: 35px;
-}
+
 
 /* ---------------- Progress bar langues-------------- */
+
+#langues {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  font-size: 1.2em;
+  position: relative;
+}
 .w3-light-grey {
   background-color: #ddd6d6;
   border-radius: 3%;
@@ -760,20 +732,12 @@ section#knowledge {
   font-size: 15px;
 }
 
-#langues {
-  -webkit-box-align: stretch;
-  -ms-flex-align: stretch;
-  align-items: stretch;
-  font-size: 18px;
-  width: 50%;
-  padding: auto;
-  position: relative;
-}
-
 #separation {
   width: 1px;
-  display: inline-block;
-  margin-top: 25px;
+  background-color: blue;
+  height: 20vh;
+  position: absolute;
+  top: calc(50% - 10vh);
 }
 
 /*----------------------- DIv à fond vert contact----------------------*/
@@ -1071,52 +1035,59 @@ a {
 }
 
 .fa-phone {
-  border-radius: 4px;
-  background-color: whitesmoke;
-  color: black;
-  width: 29px;
-  height: 27px;
-  margin-right: 15px;
-  font-size: 22px;
-  padding-top: 5px;
+  border-radius: 3px;
+  background-color: rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
+  font-size: 1em;
+  padding-top: 7px;
+  width: auto;
   text-align: center;
+  border: 1.5px solid rgb(0, 0, 0);
+  padding: 1%;
+  min-width: 3vw;
+  margin: 0 1vw 0 0;
 }
 
 .fa-user-plus {
   border-radius: 3px;
   background-color: black;
-  margin-right: 15px;
   color: white;
-  font-size: 18px;
+  font-size: 1em;
   padding-top: 7px;
-  width: 30px;
-  height: 27px;
+  width: auto;
   text-align: center;
-  border: 0.4px solid white;
+  border: 1.5px solid white;
+  padding: 1%;
+  min-width: 3vw;
+  margin: 0 1vw 0 0;
 }
 
 .fa-envelope-open {
-  color: white;
-  margin-right: 15px;
-  font-size: 22px;
-  width: 34px;
-  height: 29px;
-  background-color: #1c86ff;
-  border-radius: 4px;
+  border-radius: 3px;
+  background-color: rgb(255, 255, 255);
+  color: #1c86ff;
+  font-size: 1em;
+  padding-top: 7px;
+  width: auto;
   text-align: center;
-  padding-top: 5px;
+  border: 1.5px solid rgb(0, 0, 0);
+  padding: 1%;
+  min-width: 3vw;
+  margin: 0 1vw 0 0;
 }
 
 .fa-map-marker-alt {
-  width: 32px;
-  height: 30px;
-  border-radius: 4px;
+  border-radius: 3px;
+  background-color: rgb(255, 255, 255);
+  color:#1900ff ;
+  font-size: 1em;
+  padding-top: 7px;
+  width: auto;
   text-align: center;
-  padding-top: 3px;
-  background-color: #f7f1f1;
-  color: #1900ff;
-  margin-right: 15px;
-  font-size: 23px;
+  border: 1.5px solid rgb(0, 0, 0);
+  padding: 1%;
+  min-width: 3vw;
+  margin: 0 1vw 0 0 ;
 }
 
 .fa-facebook {
@@ -1164,9 +1135,8 @@ a {
 .fa-user-plus:hover {
   background-color: white;
   color: #e95500;
-  -webkit-transition: 0.4s;
-  -o-transition: 0.4s;
   transition: 0.4s;
+  padding: 19px;
 }
 
 .fa-envelope-open:hover {

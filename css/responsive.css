@@ -4,6 +4,7 @@
   ##Screen = B/w 768px to 1024px
 */
 @media screen and (max-width: 1024px) {
+
   html, body {
     margin: 0;
     padding: 0; }
@@ -450,4 +451,4 @@
     }
   
   }
-/*fin iphone*/
+/*fin téléphone*/
