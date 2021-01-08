@@ -9,8 +9,8 @@ window.onscroll = function() {
 };
 
 function scrollFunction() {
-  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-    document.getElementById("myBtn").style.display = "block";
+  if (document.body.scrollTop > 500 || document.documentElement.scrollTop > 500) {
+    document.getElementById("myBtn").style.display = "flex";
   } else {
     document.getElementById("myBtn").style.display = "none";
   }
@@ -22,16 +22,56 @@ function topFunction() {
   document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
 }
 
- let styleOfNav=" display: -webkit-box;display: -ms-flexbox; display: flex; height: 70px; position: fixed;width: 100%; z-index: 100; background-color: rgba(0, 0, 0, 0.91);";
 
-//  function navDisplay(){
-//   if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-//     document.getElementById("nav").style="display:none;";
-//   } 
-//   else {
-//     document.getElementById("nav").style=`${styleOfNav}`;
+// Ajout de la date (mois/année) dans le copyright du Footer dynamiquement 
+let copyrightDate=document.querySelector(".copyrightDate");
 
-//   }
-// }
+let date= new Date();
+let month=date.getMonth()+1;
+let currentYear=date.getFullYear();
+switch (month) {
+  case 1:
+    month="Janvier"
+    break;
+  case 2:
+    month="Février"
+    break;
+  case 3:
+    month="Mars"
+    break;
+  case 4:
+    month="Avril"
+    break;
+  case 5:
+    month="Mai"
+    break;
+  case 6:
+    month="Juin"
+    break;
+  case 7:
+    month="Juillet"
+    break;
+  case 8:
+    month="Août"
+    break;
+  case 9:
+    month="Septembre"
+    break;
+  case 10:
+    month="Octobre"
+    break;
+  case 11:
+    month="Novembre"
+    break;
+  case 12:
+    month="Décembre"
+    break;
 
-z
+  default:
+  month;
+    break;
+}
+
+copyrightDate.innerHTML=` ${month} ${currentYear}`;
+// alert(month);
+

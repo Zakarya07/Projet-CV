@@ -10,7 +10,8 @@ html {
 
 body {
   color: white;
-  font-family: 'Raleway', sans-serif;
+  font-family: 'Noto Sans', sans-serif;
+
 }
 
 html,
@@ -22,7 +23,6 @@ body {
 .container {
   width: 80vw;
   margin: 0 auto;
-  background-color: red;
 }
 
 a {
@@ -33,7 +33,7 @@ a {
 header {
   background-image: url("../Images/test.jpg");
   width: 100%;
-  height: 100%;
+  height: 100vh;
   background-size: cover;
   background-position: center;
   padding-bottom: 20px;
@@ -43,13 +43,12 @@ header nav {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  height: 8vh;
+  height: 6vh;
   position: fixed;
   width: 100%;
-  background: linear-gradient(331deg,
-   rgba(45, 43, 60, 1) 0%,
-   rgba(12, 37, 23, 1) 44%, rgba(12, 26, 41, 1) 50%,
-    rgba(27, 11, 6, 1) 56%, rgba(42, 47, 51, 1) 100%);
+  background-color: #47e2dd;
+background-image: linear-gradient(160deg, #24554e, #47c2be 30%, #1bb8a3 90%);
+  /* background: linear-gradient(331deg, rgb(19, 15, 61), rgb(23, 65, 41) 24%, rgb(22, 40, 59) 40%, rgb(51, 21, 12) 85%, rgb(4, 6, 7) 100%); */
   z-index: 100;
 }
 
@@ -117,14 +116,13 @@ header nav div.nav_list_container ul li a:hover {
   color: #0fdbbd;
 }
 
-
 header h1 {
   text-align: center;
   padding-top: 330px;
   text-transform: capitalize;
   color: #fff;
   font-weight: 500;
-  font-size: 6em;
+  font-size: 5em;
   font-family: 'Montserrat', sans-serif;
   letter-spacing: 1.5px;
   animation: big 1.5s linear;
@@ -136,15 +134,11 @@ header h2 {
   text-align: center;
   padding-top: 35px;
   letter-spacing: 1px;
-  font-size: 2.5em;
+  font-size: 2em;
   font-weight: 100;
 }
 
-
-
 /*----------------------------- Body (corps de page) & général---------------------- */
-
-
 
 .titre {
   font-size: 4em;
@@ -158,8 +152,6 @@ header h2 {
   font-weight: 500;
   margin-bottom: 100px;
   padding: 10px 20px;
-
-
 }
 
 .titre::after {
@@ -187,7 +179,7 @@ header h2 {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
-  flex-grow: 6;
+  flex: 1.1;
 }
 
 .photo {
@@ -195,43 +187,32 @@ header h2 {
   background-size: cover;
   background-repeat: no-repeat;
   width: 100%;
-  height: 420px;
+  min-height: 50vh;
   position: relative;
-}
-
-.photo .bg {
-  background: url("../Images/photo-frame.png") bottom center no-repeat;
-  background-size: cover;
-  z-index: 10;
-  height: 100%;
-  position: absolute;
-  bottom: 0px;
-  width: 100%;
 }
 
 #coordonnees {
   display: flex;
   flex-direction: column;
   width: 100%;
-  height: auto;
-  font-style: italic;
+  height: 100%;
   color: black;
   background-color: white;
-   padding:5% 0;
+  padding: 2vh 0;
+  align-items: center;
 }
 
 #coordonnees span:not(p) {
   font-weight: bold;
-  color: red;
+  letter-spacing: 2px;
 }
 
-  
 #coordonnees hr {
-  width: 80%;
-  margin: 0 auto 2%;
+  width: 90%;
+  margin: 1px auto 2%;
   border: none;
-  height: 0.4vh;
-  background: black;
+  height: 1px;
+  background: #2dad89;
 }
 
 #dwld {
@@ -242,40 +223,38 @@ header h2 {
   min-height: 8vh;
 }
 
-#message {
-  border-radius: 1%;
-  width: 40%;
+a#message {
+  border-radius: 2px;
+  width: 25%;
   height: 5vh;
   text-align: center;
-  padding:10px;
-  background: #7a7186;
-  color: white;
+  padding: 10px;
+  background: #000000;
+  color: rgb(208, 211, 62);
   text-decoration: none;
-  font-weight: bold;
-
 }
 
-#message:hover {
-  background-color: #d4d415;
+a#message:hover {
+  background-color: #ffff00;
   transition: 1s;
   color: black;
 }
 
-#download {
-  border-radius: 1%;
+a#download {
+  border-radius: 2px;
   display: inline-block;
-  width: 40%;
+  width: 25%;
   height: 5vh;
   text-align: center;
   padding: 10px;
-  background: #5125ad;
-  color: white;
+  background: #000000;
+  color: #8556eb;
   text-decoration: none;
 }
 
-#download:hover {
-  background-color: #b131a0;
-  color: black;
+a#download:hover {
+  background-color: #8556eb;
+  color: rgb(0, 0, 0);
   transition: 1s;
 }
 
@@ -321,12 +300,11 @@ section#infos h3 {
   display: flex;
   flex-direction: column;
   background-color: #ffffff;
-  border: 2px solid black;
-  flex-grow:1;
+  flex: 4;
 }
 
 .section_intro p {
-  padding-bottom: 10px;
+  padding: 1.5vh 0;
   word-spacing: 1px;
   color: black;
   text-align: center;
@@ -338,12 +316,15 @@ section#infos h3 {
   font-size: 16px;
 }
 
-.section_intro span {
-  font-size: large;
+
+.section_intro p a:first-of-type {
+  text-decoration: none;
 }
 
-#openclassroom:hover {
-  color: red;
+.section_intro span {
+  font-size: large;
+  font-weight: bold;
+  background-color: rgb(124, 216, 201);
 }
 
 /* ----------------------------------------Section parcours----------------------------  */
@@ -434,6 +415,15 @@ section#timeline article div.inner span.badge_icon_contain {
   align-items: center;
 }
 
+section#timeline article div.inner span.badge_icon_contain .fa-graduation-cap {
+  color: white;
+}
+
+section#timeline article div.inner span.badge_icon_contain i {
+  font-size: 1.2em;
+}
+
+
 section#timeline article div.inner div.div-bg-title-date {
   margin: 0;
   font-size: 20px;
@@ -502,10 +492,6 @@ section#timeline article div.inner div.div-bg-title-date {
   border-bottom: 0;
 }
 
-/* section#timeline article div.inner h2 {
-  border: 1px solid rgb(226, 219, 219);
-} */
-
 section#timeline article div.inner h2:last-child {
   border-bottom: 1px solid black;
 }
@@ -522,11 +508,10 @@ section#timeline article div.inner div.div-bg-title-date {
   height: 45vh;
 }
 
-
 .div-date {
   color: white;
   text-transform: uppercase;
-  background-color: #15d615;
+  background: linear-gradient(rgb(78, 175, 255), rgb(48, 45, 45));
   padding: 6px 0;
   width: 25%;
   font-size: 1.4rem;
@@ -534,7 +519,7 @@ section#timeline article div.inner div.div-bg-title-date {
   border-right: 2px solid white;
   border-bottom: 2px solid white;
   z-index: 1;
-  text-shadow: 2px -2px 2px rgb(153, 35, 35);
+
 }
 
 .img-contain {
@@ -553,7 +538,7 @@ section#timeline article div.inner div.div-bg-title-date {
 }
 
 .img-contain h1 {
-  width: 80%;
+  min-width: 50%;
   padding: 1%;
   margin: auto;
   background: rgb(5, 2, 51);
@@ -657,7 +642,7 @@ section#knowledge {
 #section_hobbies ul li {
   text-align: center;
   list-style-type: none;
-  margin-bottom: 30px;
+  margin: 30px auto;
 }
 
 #section_hobbies p {
@@ -672,8 +657,6 @@ section#knowledge {
   flex-direction: column;
 }
 
-
-
 /* ---------------- Progress bar langues-------------- */
 
 #langues {
@@ -683,6 +666,7 @@ section#knowledge {
   font-size: 1.2em;
   position: relative;
 }
+
 .w3-light-grey {
   background-color: #ddd6d6;
   border-radius: 3%;
@@ -798,31 +782,10 @@ footer#contact {
   padding: 2% 0 1%;
 }
 
-#age {
-  background-color: #7e7373;
-  border: 2px solid black;
-  border-radius: 7px;
-  padding-left: 50px;
-  display: inline-block;
-  width: 300px;
-  height: 22px;
-  text-align: center;
-  padding: 12px 15px;
-  margin-top: 50px;
-  text-decoration: none;
-  font-weight: bold;
-}
-
-
 footer:not(#entetediv4) {
   width: auto;
   background-color: #ffffff;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: column;
   flex-direction: column;
 }
 
@@ -833,32 +796,24 @@ footer:not(#entetediv4) {
 }
 
 #formulaire {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
   justify-content: center;
-  width: 50%;
-  margin-top: 20px;
-  margin-left: -30px;
+  flex-grow: 2;
+  padding: 2vh 0;
 }
 
 input {
-  font-family: helvetica;
-  margin-bottom: 20px;
-  height: 30px;
-  padding-left: 5px;
+  font-family: Helvetica;
   border-radius: 2px;
 }
 
+footer input[type="text"],footer input[type="email"]{
+margin-bottom: 1vh;
+padding:1vh .5vw;
+}
 
 .col-50 {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
   justify-content: space-between;
 }
 
@@ -884,31 +839,28 @@ textarea {
   padding-top: 25px;
 }
 
-
 #txt {
-  height: 180px;
-  padding-top: 3px;
+  min-height: 25vh;
+  padding-top: .5vh;
   padding-left: 3px;
 }
 
-#send {
-  margin-bottom: 250px;
-  width: 404px;
-  height: 35px;
+input[type="submit"]#send {
   border-radius: 2.5px;
   background-color: #40c4b2;
   color: white;
   font-size: 1.2em;
   border: none;
-  letter-spacing: 0.6px;
+  letter-spacing: 0.5px;
+  padding: .5vh 0.5vw;
+  transition: background-color 0.4s, letter-spacing 1s;
+
 }
 
-#send:hover {
-  background-color: #1e8881;
+input[type="submit"]#send:hover {
+  background-color: #00a8a0;
   color: #f8f6f2;
-  -webkit-transition: 0.4s;
-  -o-transition: 0.4s;
-  transition: 0.4s;
+  letter-spacing:5px;
 }
 
 .barrelaterale {
@@ -918,7 +870,7 @@ textarea {
 
 #hr1 {
   width: 100%;
-  margin-bottom: 60px;
+  margin-bottom: 5vh;
 }
 
 #hr2 {
@@ -944,9 +896,8 @@ footer #cprt {
 
 .perso {
   color: #0fdbbd;
-  font-size: 25px;
-  margin-bottom: 20px;
-  margin-top: 20px;
+  font-size: 1.5em;
+  margin-bottom: 2vh;
   font-family: 'Montserrat';
 }
 
@@ -961,16 +912,16 @@ footer>div>h3 {
 }
 
 #importante {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
+  align-items: center;
 }
 
 #zakarya {
   display: flex;
+  flex-grow: 1;
   flex-direction: row;
   justify-content: center;
-  width: 50%;
+
 }
 
 #zakarya hr {
@@ -978,23 +929,18 @@ footer>div>h3 {
   height: 1px;
 }
 
-.section {
+.section2 {
   display: flex;
   flex-direction: column;
-  width: 250px;
+  flex-grow: 8;
 }
 
 .section1 {
   display: flex;
   flex-direction: column;
-  margin-right: 90px;
-  width: 250px;
+  flex-grow: 1;
 }
 
-#top-left {
-  margin-bottom: 40px;
-  width: 300px;
-}
 
 .section1 p {
   font-weight: 700;
@@ -1005,35 +951,24 @@ a {
   font-weight: 700;
 }
 
+/* #top-left {
+}
 #top-right {
-  margin-bottom: 40px;
-  width: 300px;
+ 
 }
 
 #bottom-right {
-  width: 300px;
 }
 
 #bottom-left {
-  width: 300px;
-}
+} */
 
 .col {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: column;
   flex-direction: column;
 }
 
 /*----------------------font-awesome--------------------*/
-.fa-chevron-up {
-  font-size: 13px;
-  width: 20px;
-}
-
 .fa-phone {
   border-radius: 3px;
   background-color: rgb(255, 255, 255);
@@ -1079,15 +1014,14 @@ a {
 .fa-map-marker-alt {
   border-radius: 3px;
   background-color: rgb(255, 255, 255);
-  color:#1900ff ;
+  color: #1900ff;
   font-size: 1em;
-  padding-top: 7px;
+  padding: .5vh 0;
   width: auto;
   text-align: center;
   border: 1.5px solid rgb(0, 0, 0);
-  padding: 1%;
   min-width: 3vw;
-  margin: 0 1vw 0 0 ;
+  margin: 0 1vw 0 0;
 }
 
 .fa-facebook {
@@ -1160,12 +1094,6 @@ a {
   margin-right: 15px;
 }
 
-.fa-graduation-cap {
-  color: #7c1921;
-  font-size: 22px;
-  margin-right: 15px;
-}
-
 .fa-school {
   font-size: 22px;
   margin-right: 15px;
@@ -1177,6 +1105,36 @@ a {
   margin-right: 15px;
 }
 
+/*---------------------------------------Button top------------------------------------ */
+#myBtn {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 4vw;
+  height: 2vh;
+  z-index: 99;
+  outline: none;
+  background-color: rgb(21, 214, 172);
+  color: rgb(0, 0, 0);
+  cursor: auto;
+  font-weight: thin;
+  border: none;
+  justify-content: center;
+  align-items: center;
+  transition: background-color .5s, color 0.5s .2s, transform .5s, border .1s, font-size .5s .5s;
+}
+
+#myBtn i {
+  font-size: 1.2em;
+}
+
+#myBtn:hover {
+  color: rgb(243, 242, 242);
+  background-color: #198b73;
+  transform: scale(1.05);
+  border: lightgrey 1px solid;
+}
 
 /* --------------------------------------------- D É C L A R A T I O N ___ A N I M A T I O N ------------------------------------------------- */
 .progress-bar {
@@ -1326,8 +1284,6 @@ a {
   }
 }
 
-
-
 /*-------------------animation wordpress---------------*/
 .progress-value.wordpress {
   animation: progress-wordpress 4.5s ease-in-out forwards;
@@ -1347,8 +1303,6 @@ a {
   }
 }
 
-
-
 /*-------------------animation bootstrap---------------*/
 .progress-value.bootstrap {
   animation: progress-bootstrap 4.5s ease-in-out forwards;
@@ -1367,34 +1321,6 @@ a {
     width: 65%;
   }
 }
-
-/*---------------------------------------Button top------------------------------------ */
-#myBtn {
-  display: none;
-  position: fixed;
-  bottom: 45px;
-  right: 42px;
-  z-index: 99;
-  outline: none;
-  background-color: rgba(37, 37, 39, 0.32);
-  color: white;
-  cursor: auto;
-  font-size: 14px;
-  width: 32px;
-  height: 32px;
-  font-weight: thin;
-  border: none;
-}
-
-#myBtn:hover {
-  color: rgb(243, 242, 242);
-  background-color: #101011;
-  border: 1px solid wheat;
-  transition: 0.5s;
-}
-
-
-
 
 @keyframes big {
   from {
