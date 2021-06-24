@@ -490,7 +490,7 @@ a { color: #fafafa; }
 /*-------------------------- En tête -----------------------------*/
 header { background-image: url("../Images/test.jpg"); width: 100%; height: 100vh; background-size: cover; background-position: center; padding-bottom: 20px; }
 
-header nav { display: flex; justify-content: center; align-items: center; height: 6vh; position: fixed; width: 100%; background-color: #44a5a2; background-image: linear-gradient(#374440, #54afab); background-size: 500vw 100vh; background-position: left top; z-index: 100; animation: moveNavBackground 10s ease-in alternate infinite; padding: 0 1em; }
+header nav { display: flex; justify-content: center; align-items: center; height: 6vh; position: fixed; width: 100%; background-color: #44a5a2; background-image: linear-gradient(#000000, #18ada6); background-size: 500vw 300vh; background-position: left top; z-index: 100; animation: moveNavBackground 10s ease-in alternate infinite; padding: 0 1em; }
 
 header nav .surounder { display: flex; justify-content: space-between; align-items: center; width: 85%; height: 100%; }
 
@@ -526,25 +526,25 @@ header h2 { text-transform: uppercase; font-family: 'Montserrat', sans-serif; te
 /*----------------------------- Section à propos de moi--------------------------  */
 .contenu h3 { font-size: 1.4em; font-style: italic; text-transform: capitalize; text-align: center; }
 
-#elkhattabi { display: flex; flex-direction: column; flex-wrap: wrap; flex: 1.1; }
+#elkhattabi { display: flex; flex-direction: column; flex: 1.5; }
 
-.photo { background-image: url("../Images/bg.JPG"); background-size: cover; background-repeat: no-repeat; width: 100%; min-height: 50vh; position: relative; }
+.photo { background-image: url("../Images/bg.JPG"); background-size: cover; background-repeat: no-repeat; width: 100%; min-height: 55vh; position: relative; box-shadow: 1px 0px 25px -5px rgba(119, 136, 153, 0.5); }
 
-#coordonnees { display: flex; flex-direction: column; width: 100%; height: 100%; color: black; background-color: white; padding: 2vh 0; align-items: center; }
+#coordonnees { display: flex; flex-direction: column; justify-content: center; width: 100%; height: 100%; color: black; background-color: white; padding: 2vh 0; align-items: center; }
 
 #coordonnees span:not(p) { font-weight: bold; letter-spacing: 2px; }
 
 #coordonnees hr { width: 90%; margin: 1px auto 2%; border: none; height: 1px; background: #2dad89; }
 
-#dwld { display: flex; flex-direction: row; justify-content: space-evenly; align-items: center; min-height: 8vh; }
+#dwld { display: flex; flex-direction: row; justify-content: space-evenly; align-items: center; min-height: 8vh; padding: 1em 0; }
 
-a#message { border-radius: 2px; width: 25%; height: 5vh; text-align: center; padding: 10px; background: #000000; color: #d0d33e; text-decoration: none; }
+a#message { min-width: 25%; color: black; padding: 1em 2em; border: 2px solid black; text-transform: uppercase; text-decoration: none; transition: all .25s linear; }
 
-a#message:hover { background-color: #ffff00; transition: 1s; color: black; }
+a#message:hover { background-color: black; color: #fcfcfc; }
 
-a#download { border-radius: 2px; display: inline-block; width: 25%; height: 5vh; text-align: center; padding: 10px; background: #000000; color: #8556eb; text-decoration: none; }
+a#download { color: #4dacaf; text-decoration: none; background-color: black; padding: 1em 2em; text-transform: uppercase; transition: .25s; }
 
-a#download:hover { background-color: #8556eb; color: black; transition: 1s; }
+a#download:hover { background-color: #22a6aa; color: black; }
 
 section#infos { background: #000000; width: auto; height: auto; padding: 2% 0; }
 
@@ -552,11 +552,13 @@ section#infos h3 { text-transform: capitalize; font-size: 1.8em; text-align: cen
 
 #infos div#coordonnees p { color: black; font-weight: normal; padding-bottom: 37.5px; font-size: larger; }
 
-.contenu { display: flex; flex-direction: row; justify-content: center; align-items: flex-start; }
+.contenu { display: flex; }
 
 #entetediv1 { color: #fff; }
 
 .section_intro { display: flex; flex-direction: column; background-color: #ffffff; flex: 4; }
+
+.section_intro .presentation { padding: .5em 2.5em; min-height: 55vh; }
 
 .section_intro p { padding: 1.5vh 0; word-spacing: 1px; color: black; text-align: center; font-weight: bold; }
 
@@ -660,23 +662,25 @@ section#knowledge { width: auto; background-color: #1A1E23; padding: 2% 0; }
 
 #section_hobbies p { text-align: center; color: black; }
 
-#hobby { font-size: 1.2em; flex-grow: 1; display: flex; flex-direction: column; }
+#section_hobbies #hobby { font-size: 1.2em; flex-grow: 1; display: flex; flex-direction: column; }
+
+#section_hobbies #separation { width: 1px; background-color: white; height: 75%; position: absolute; top: 50%; border: none; transform: translateY(-50%); }
 
 /* ---------------- Progress bar langues-------------- */
 #langues { display: flex; flex-direction: column; flex-grow: 1; font-size: 1.2em; position: relative; }
 
-.w3-light-grey { background-color: #ddd6d6; border-radius: 3%; height: 3vh; width: 70%; padding: 20px auto; border: 2px solid black; display: flex; flex-direction: column; position: absolute; left: calc(50% - 35%); }
+#section_hobbies .w3-container > p { color: whitesmoke; }
 
-.english { height: 19.2px; width: 55%; background-color: #24BFBA; border-right: 1px solid black; position: absolute; left: -0.2px; top: -0.4px; }
+.w3-light-grey { background-color: #000000; border-radius: 5px; height: 2.75vh; width: 70%; border: 2px solid rgba(0, 0, 0, 0.85); display: flex; flex-direction: column; position: absolute; left: 50%; transform: translateX(-50%); overflow: hidden; }
 
-.spain { height: 19.2px; width: 28%; background-color: #24BFBA; border-right: 1px solid black; position: absolute; left: -0.2px; top: -0.3px; }
+.english { height: 100%; width: 55%; background-color: white; border-right: 1px solid black; }
 
-.arabic { height: 19.2px; width: 65%; background-color: #24BFBA; border-right: 1px solid black; position: absolute; left: -0.2px; top: -0.2px; }
+.spain { height: 100%; width: 28%; background-color: white; border-right: 1px solid black; }
+
+.arabic { height: 100%; width: 65%; background-color: white; border-right: 1px solid black; }
 
 /* ------------------------------------------------------ */
 #hobby .fas { margin-right: 10px; font-size: 15px; }
-
-#separation { width: 1px; background-color: blue; height: 20vh; position: absolute; top: calc(50% - 10vh); }
 
 /*----------------------- DIv à fond vert contact----------------------*/
 .contact-btn { display: flex; flex-direction: column; justify-content: center; background: url("../Images/zcontact.jpg"); background-size: cover; background-repeat: no-repeat; background-position: center; text-align: center; padding: 60px 0; position: relative; height: 300px; }
