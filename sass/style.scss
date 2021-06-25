@@ -24,6 +24,7 @@ body {
 .container {
     width: 80vw;
     margin: 0 auto;
+    background: lightgrey;
 }
 
 a {
@@ -375,9 +376,12 @@ section#experiences {
 
 /*---------------T-I-ME-L-I-N-E----------------*/
 
-section#timeline {
+div#timeline {
     margin: 20px auto;
     position: relative;
+    background-color: burlywood;
+    border: 3px solid red;
+    width: 80%;
 
     &:first-child:not(span.badge_icon_contain) {
         margin-top: -181px;
@@ -387,18 +391,23 @@ section#timeline {
         content: '';
         display: block;
         position: absolute;
-        left: calc(50% - 0.2vw);
+        left: 50%;
         top: 0;
         margin: auto;
-        width: 0.4vw;
+        width: 0.25vw;
         height: 100%;
-        background: rgb(0, 0, 0);
+        background: black;
+        transform: translateX(-50%)
     }
 
     article {
-        width: 60vw;
-        margin: 8vh auto;
         position: relative;
+
+        
+
+        &:not(:first-of-type) {
+            margin-top: 5vh;
+        }
 
         &:after {
             content: '';
@@ -406,31 +415,35 @@ section#timeline {
             clear: both;
         }
 
+        &:nth-of-type(even) .inner {
+            justify-content: flex-start;
+        }
+
         div.inner {
             margin: 10% 0 0 0;
             border-radius: 6px;
             float: left;
+            border: 4px solid yellow;
+            padding: .5em;
+            display: flex;
+            justify-content: flex-end;
+
 
             span.badge_icon_contain {
-                display: flex;
-                width: 2.8vw;
-                height: 5.6vh;
+                width: .25vw;
+                height: 5vh;
                 position: absolute;
-                top: 1%;
-                left: calc(50% - 1.4vw);
-                border-radius: 30%;
+                top: 50%;
+                left: 50%;
                 color: white;
-                background: linear-gradient(45deg, rgb(89, 114, 122), rgb(3, 3, 26) 55%);
-                justify-content: center;
-                align-items: center;
+                background: whitesmoke;
+                transform: translateX(-50%) translateY(-50%);
 
-                .fa-graduation-cap {
-                    color: white;
-                }
+            }
 
-                i {
-                    font-size: 1.2em;
-                }
+            .around{
+                border: 3px solid royalblue;
+                width: 45%;
             }
 
             div.div-bg-title-date {
@@ -692,10 +705,11 @@ section#knowledge {
         flex-grow: 1;
         display: flex;
         flex-direction: column;
-           
 
-        
+
+
     }
+
     #separation {
         width: 1px;
         background-color: white;
@@ -718,7 +732,7 @@ section#knowledge {
     position: relative;
 }
 
-#section_hobbies .w3-container > p {
+#section_hobbies .w3-container>p {
     color: whitesmoke;
 }
 
