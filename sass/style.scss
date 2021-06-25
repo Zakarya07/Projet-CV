@@ -155,8 +155,7 @@ header {
 /*----------------------------- Body (corps de page) & général---------------------- */
 
 .titre {
-    font-size: 4em;
-    width: 50vw;
+    font-size: 3em;
     text-align: center;
     margin: auto;
     position: relative;
@@ -171,9 +170,9 @@ header {
         content: "―❖―";
         position: absolute;
         height: auto;
-        left: calc(50% - 20%);
+        left: 50%;
         display: block;
-        width: 40%;
+        transform: translateX(-50%);
     }
 }
 
@@ -234,7 +233,7 @@ header {
 #dwld {
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
+    justify-content: space-around;
     align-items: center;
     min-height: 8vh;
     padding: 1em 0;
@@ -355,7 +354,6 @@ section#experiences {
 }
 
 #entetediv2 {
-    border-radius: 3px;
     color: #000000;
 }
 
@@ -838,9 +836,8 @@ footer {
 }
 
 #entetediv4 {
-    width: 650px;
     text-align: center;
-    color: #cfcaca;
+    color: #cfdada;
 }
 
 #formulaire {
