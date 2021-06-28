@@ -475,7 +475,27 @@
 
 @keyframes moveNavBackground { 100% { background-position: right bottom; } }
 
-* { margin: 0; padding: 0; box-sizing: border-box; }
+@font-face { font-family: "Open-Sans-Serif"; src: url("../Fonts/open-sans/OpenSans-Light.ttf"); font-weight: 300; }
+
+@font-face { font-family: "Open-Sans-Serif"; src: url("../Fonts/open-sans/OpenSans-LightItalic.ttf"); font-weight: 300; font-style: italic; }
+
+@font-face { font-family: "Open-Sans-Serif"; src: url("../Fonts/open-sans/OpenSans-Italic.ttf"); font-weight: 300; font-style: italic; }
+
+@font-face { font-family: "Open-Sans-Serif"; src: url("../Fonts/open-sans/OpenSans-Regular.ttf"); font-weight: 400; }
+
+@font-face { font-family: "Open-Sans-Serif"; src: url("../Fonts/open-sans/OpenSans-Semibold.ttf"); font-weight: 600; }
+
+@font-face { font-family: "Open-Sans-Serif"; src: url("../Fonts/open-sans/OpenSans-SemiboldItalic.ttf"); font-weight: 600; font-style: italic; }
+
+@font-face { font-family: "Open-Sans-Serif"; src: url("../Fonts/open-sans/OpenSans-Bold.ttf"); font-weight: 700; }
+
+@font-face { font-family: "Open-Sans-Serif"; src: url("../Fonts/open-sans/OpenSans-BoldItalic.ttf"); font-weight: 700; font-style: italic; }
+
+@font-face { font-family: "Open-Sans-Serif"; src: url("../Fonts/open-sans/OpenSans-ExtraBold.ttf"); font-weight: 800; }
+
+@font-face { font-family: "Open-Sans-Serif"; src: url("../Fonts/open-sans/OpenSans-ExtraBoldItalic.ttf"); font-weight: 800; font-style: italic; }
+
+* { margin: 0; padding: 0; box-sizing: border-box; font-family: "Open-Sans-Serif"; }
 
 html { scroll-behavior: smooth; }
 
@@ -582,19 +602,17 @@ div#timeline { margin: 20px auto; position: relative; background-color: burlywoo
 
 div#timeline:first-child:not(span.badge_icon_contain) { margin-top: -181px; }
 
-div#timeline:before { content: ''; display: block; position: absolute; left: 50%; top: 0; margin: auto; width: 0.25vw; height: 100%; background: black; transform: translateX(-50%); }
+div#timeline:before { content: ''; display: block; position: absolute; left: 50%; top: 0; margin: auto; width: 0.1vw; height: 100%; background: black; transform: translateX(-50%); }
 
 div#timeline article { position: relative; }
-
-div#timeline article:not(:first-of-type) { margin-top: 5vh; }
 
 div#timeline article:after { content: ''; display: block; clear: both; }
 
 div#timeline article:nth-of-type(even) .inner { justify-content: flex-start; }
 
-div#timeline article div.inner { margin: 10% 0 0 0; border-radius: 6px; float: left; border: 4px solid yellow; padding: .5em; display: flex; justify-content: flex-end; }
+div#timeline article div.inner { border: 4px solid yellow; padding: .5em; display: flex; justify-content: flex-end; }
 
-div#timeline article div.inner span.badge_icon_contain { width: .25vw; height: 5vh; position: absolute; top: 50%; left: 50%; color: white; background: whitesmoke; transform: translateX(-50%) translateY(-50%); }
+div#timeline article div.inner span.badge_icon_contain { width: .1vw; height: 3vh; position: absolute; top: 50%; left: 50%; color: white; background: whitesmoke; transform: translateX(-50%) translateY(-50%); }
 
 div#timeline article div.inner .around { border: 3px solid royalblue; width: 45%; }
 
@@ -602,42 +620,17 @@ div#timeline article div.inner div.div-bg-title-date { margin: 0; font-size: 20p
 
 div#timeline article div.inner div.div-bg-title-date:after { content: ''; position: absolute; top: calc(0px - 2.5vh); background: linear-gradient(to bottom right, black 48%, transparent 50%); right: calc(50% - 1.25vw); width: 2.4vw; height: 4.9vh; transform: rotate(45deg); border: 1px solid white; border-right: none; border-bottom: none; }
 
-div#timeline article:nth-child(2n+2) div.inner div.div-bg-title-date:after { border-top: 1px solid black; border-left: 1px solid black; border-bottom: none !important; border-right: none !important; top: calc(0px - 2.49vh); right: calc(50% - 1.25vw); text-align: center; border: 1px solid white; background: linear-gradient(to bottom right, black 46.5%, transparent 50%); }
+div#timeline article:nth-child(2n+2) div.inner { float: right; }
 
-div#timeline article div.inner:nth-child(7) { border-top: none; }
+div#timeline article div.inner div.div-bg-title-date { text-align: center; color: black; font-weight: bold; height: 30vh; margin-bottom: 7.5vh; }
 
-div#timeline article div.inner:hover div.div-bg-title-date { color: white; background-color: #000000; transition: 1.9s; border: 1px solid white; }
+div#timeline .img-contain { height: 100%; width: 100%; display: flex; flex-direction: row; justify-content: center; position: relative; align-items: center; }
 
-div#timeline article div.inner:hover h2 { color: white; background-color: #000000; transition: 1.9s; border: 1px solid white; }
+div#timeline .img-contain img { height: 100%; width: 100%; filter: grayscale(100%); }
 
-div#timeline article div.inner:hover h2:after { color: white; background-color: #000000; transition: 1.9s; border: 1px solid white; }
+div#timeline .img-contain h1 { position: absolute; color: white; font-size: 1em; left: -100%; top: 50%; transform: translateY(-50%); background-color: blue; text-align: center; }
 
-div#timeline article div.inner:hover .fa-briefcase, div#timeline article div.inner:hover .fa-school { color: white; background-color: #000000; transition: 1.9s; border: 1px solid white; }
-
-div#timeline article div.inner:hover .fa-briefcase, div#timeline article div.inner:hover .fa-school { border: none; }
-
-div#timeline article div.inner div.div-bg-title-date, div#timeline article div.inner h2 { border: 1px solid black; }
-
-div#timeline article div.inner div.div-bg-title-date { border-bottom: 0; }
-
-div#timeline article div.inner h2:last-child { border-bottom: 1px solid black; }
-
-div#timeline article:nth-child(2n+2) div.inner { float: right; text-align: center; }
-
-div#timeline article div.inner div.div-bg-title-date { text-align: center; color: black; font-weight: bold; height: 45vh; }
-
-/* ------------ Pour les ronds de la time line---------------*/
-.div-date { color: white; text-transform: uppercase; background: linear-gradient(#4eafff, #302d2d); padding: 6px 0; width: 25%; font-size: 1.4rem; position: absolute; border-right: 2px solid white; border-bottom: 2px solid white; z-index: 1; }
-
-.img-contain { height: 100%; width: 100%; display: flex; flex-direction: row; justify-content: center; position: relative; align-items: center; }
-
-.img-contain img { height: 100%; width: 100%; }
-
-.img-contain h1 { min-width: 50%; padding: 1%; margin: auto; background: #050233; background: linear-gradient(338deg, #050233 0%, #12103c 100%); position: absolute; color: white; font-size: 2em; }
-
-.paragraph_contain h2 { padding: 15px; margin: 0; font-size: 1rem; color: white; background-color: #000000; text-align: center; }
-
-.paragraph_contain h2:first-child { color: #202ddf; font-size: 1.5em; border: 1px solid #e2dbdb; }
+div#timeline .div-date { color: white; text-transform: capitalize; font-size: 2em; position: absolute; z-index: 1; bottom: 0; transform: translateY(50%); padding: .15em; }
 
 /* --------------------Section Compétences ------------------------ */
 section#knowledge { width: auto; background-color: #1A1E23; padding: 2% 0; }
