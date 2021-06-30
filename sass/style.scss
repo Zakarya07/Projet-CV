@@ -690,27 +690,26 @@ section#knowledge {
     left: 50%;
     transform: translateX(-50%);
     overflow: hidden;
+    box-shadow: 4px 2px 5px rgba(19, 19, 19, 0.75);
+}
+
+.w3-light-grey :is(.english,.spain,.arabic){
+    box-shadow: 1px 0px 15px 2.5px #18ada6;
+    height: 100%;
+    background-color: white;
+    border-right: 1px solid black;
 }
 
 .english {
-    height: 100%;
     width: 55%;
-    background-color: white;
-    border-right: 1px solid black;
 }
 
 .spain {
-    height: 100%;
     width: 28%;
-    background-color: white;
-    border-right: 1px solid black;
 }
 
 .arabic {
-    height: 100%;
     width: 65%;
-    background-color: white;
-    border-right: 1px solid black;
 }
 
 /* ------------------------------------------------------ */
@@ -1106,27 +1105,31 @@ a {
     bottom: 20px;
     right: 20px;
     width: 4vw;
-    height: 2vh;
+    height: 2.25vh;
     z-index: 99;
     outline: none;
-    background-color: rgb(21, 214, 172);
-    color: rgb(0, 0, 0);
+    color: rgb(243, 242, 242);
+    background-color: #074e3f;
     cursor: auto;
     font-weight: thin;
     border: none;
     justify-content: center;
     align-items: center;
-    transition: background-color .5s, color 0.5s .2s, transform .5s, border .1s, font-size .5s .5s;
+    transition: background-color .5s, color 0.5s .2s, transform .5s, border .1s, font-size .5s, outline-offset .25s;
+    transition-timing-function: ease-out;
+    outline: 1px solid transparent;
 
     i {
         font-size: 1.2em;
     }
 
     &:hover {
-        color: rgb(243, 242, 242);
-        background-color: #198b73;
-        transform: scale(1.05);
-        border: lightgrey 1px solid;
+       
+        transform: scale(.975);
+        outline: 1px solid white;
+        outline-offset: -3px;
+        background-color: rgb(21, 214, 172);
+        color: rgb(0, 0, 0);
     }
 }
 

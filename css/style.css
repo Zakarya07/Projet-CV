@@ -682,13 +682,15 @@ section#knowledge { width: auto; background-color: #1A1E23; padding: 2% 0; }
 
 #section_hobbies .w3-container > p { color: whitesmoke; }
 
-.w3-light-grey { background-color: #000000; border-radius: 5px; height: 2.75vh; width: 70%; border: 2px solid rgba(0, 0, 0, 0.85); display: flex; flex-direction: column; position: absolute; left: 50%; transform: translateX(-50%); overflow: hidden; }
+.w3-light-grey { background-color: #000000; border-radius: 5px; height: 2.75vh; width: 70%; border: 2px solid rgba(0, 0, 0, 0.85); display: flex; flex-direction: column; position: absolute; left: 50%; transform: translateX(-50%); overflow: hidden; box-shadow: 4px 2px 5px rgba(19, 19, 19, 0.75); }
 
-.english { height: 100%; width: 55%; background-color: white; border-right: 1px solid black; }
+.w3-light-grey :is(.english, .spain, .arabic) { box-shadow: 1px 0px 15px 2.5px #18ada6; height: 100%; background-color: white; border-right: 1px solid black; }
 
-.spain { height: 100%; width: 28%; background-color: white; border-right: 1px solid black; }
+.english { width: 55%; }
 
-.arabic { height: 100%; width: 65%; background-color: white; border-right: 1px solid black; }
+.spain { width: 28%; }
+
+.arabic { width: 65%; }
 
 /* ------------------------------------------------------ */
 #hobby .fas { margin-right: 10px; font-size: 15px; }
@@ -795,11 +797,11 @@ footer > div > h3 { font-size: 2em; color: whitesmoke; margin-top: 30px; font-fa
 .fa-crown { color: #ffd900; margin-right: 15px; }
 
 /*---------------------------------------Button top------------------------------------ */
-#myBtn { display: none; position: fixed; bottom: 20px; right: 20px; width: 4vw; height: 2vh; z-index: 99; outline: none; background-color: #15d6ac; color: black; cursor: auto; font-weight: thin; border: none; justify-content: center; align-items: center; transition: background-color .5s, color 0.5s .2s, transform .5s, border .1s, font-size .5s .5s; }
+#myBtn { display: none; position: fixed; bottom: 20px; right: 20px; width: 4vw; height: 2.25vh; z-index: 99; outline: none; color: #f3f2f2; background-color: #074e3f; cursor: auto; font-weight: thin; border: none; justify-content: center; align-items: center; transition: background-color .5s, color 0.5s .2s, transform .5s, border .1s, font-size .5s, outline-offset .25s; transition-timing-function: ease-out; outline: 1px solid transparent; }
 
 #myBtn i { font-size: 1.2em; }
 
-#myBtn:hover { color: #f3f2f2; background-color: #198b73; transform: scale(1.05); border: lightgrey 1px solid; }
+#myBtn:hover { transform: scale(0.975); outline: 1px solid white; outline-offset: -3px; background-color: #15d6ac; color: black; }
 
 /* --------------------------------------------- D É C L A R A T I O N ___ A N I M A T I O N ------------------------------------------------- */
 .progress-bar { width: 390px; height: 1.6vh; background-color: #e9e0e0; border-radius: 3px; display: inline-block; letter-spacing: 1px; text-align: left; }
