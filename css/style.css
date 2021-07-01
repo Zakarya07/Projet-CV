@@ -508,7 +508,7 @@ html, body { width: 100%; height: 100%; }
 a { color: #fafafa; }
 
 /*-------------------------- En tête -----------------------------*/
-header { background-image: url("../Images/test.jpg"); width: 100%; height: 100vh; background-size: cover; background-position: 0% 100%; padding-bottom: 20px; }
+header { background-image: url("../Images/header_bg.jpg"); width: 100%; height: 100vh; background-size: cover; background-position: 0% 100%; padding-bottom: 20px; }
 
 header nav { display: flex; justify-content: center; align-items: center; height: 6vh; position: fixed; width: 100%; background-color: #44a5a2; background-image: linear-gradient(#000000, #18ada6); background-size: 500vw 300vh; background-position: left top; z-index: 100; animation: moveNavBackground 10s ease-in alternate infinite; padding: 0 1em; }
 
@@ -548,7 +548,7 @@ header h2 { text-transform: uppercase; font-family: 'Montserrat', sans-serif; te
 
 #elkhattabi { display: flex; flex-direction: column; flex: 1.5; }
 
-.photo { background-image: url("../Images/bg.JPG"); background-size: cover; background-repeat: no-repeat; width: 100%; min-height: 55vh; position: relative; box-shadow: 1px 0px 25px -5px rgba(119, 136, 153, 0.5); }
+.photo { background-image: url("../Images/Zakarya.jpg"); background-size: cover; background-repeat: no-repeat; width: 100%; min-height: 55vh; position: relative; box-shadow: 1px 0px 25px -5px rgba(119, 136, 153, 0.5); }
 
 #coordonnees { display: flex; flex-direction: column; justify-content: center; width: 100%; height: 100%; color: black; background-color: white; padding: 2vh 0; align-items: center; }
 
@@ -608,7 +608,7 @@ div#timeline article { position: relative; }
 
 div#timeline article:not(:last-of-type) { margin-bottom: 33vh; }
 
-div#timeline article:hover .around .img-contain img { filter: grayscale(50%); }
+div#timeline article:hover .around .img-contain img { filter: grayscale(0%); }
 
 div#timeline article:hover .around .img-contain { box-shadow: 1px 1px 10px 1px rgba(196, 196, 196, 0.5); }
 
@@ -704,7 +704,7 @@ section#knowledge { width: auto; background-color: #1A1E23; padding: 2% 0; }
 #hobby .fas { margin-right: 10px; font-size: 15px; }
 
 /*----------------------- DIv à fond vert contact----------------------*/
-.contact-btn { display: flex; flex-direction: column; justify-content: center; background: url("../Images/zcontact.jpg"); background-size: cover; background-repeat: no-repeat; background-position: center; text-align: center; padding: 60px 0; position: relative; height: 300px; }
+.contact-btn { display: flex; flex-direction: column; justify-content: center; background: url("../Images/contact_me_cta_section.jpg"); background-size: cover; background-repeat: no-repeat; background-position: center; text-align: center; padding: 60px 0; position: relative; height: 300px; }
 
 .contact-btn .green { background-color: rgba(34, 209, 197, 0.85); height: 100%; position: absolute; width: 100%; }
 

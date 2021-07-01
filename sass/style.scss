@@ -35,7 +35,7 @@ a {
 /*-------------------------- En tête -----------------------------*/
 
 header {
-    background-image: url("../Images/test.jpg");
+    background-image: url("../Images/header_bg.jpg");
     width: 100%;
     height: 100vh;
     background-size: cover;
@@ -198,7 +198,7 @@ header {
 }
 
 .photo {
-    background-image: url('../Images/bg.JPG');
+    background-image: url('../Images/Zakarya.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     width: 100%;
@@ -405,7 +405,7 @@ div#timeline {
         }
 
         &:hover .around .img-contain img {
-            filter: grayscale(50%);
+            filter: grayscale(0%);
         }
 
         &:hover .around .img-contain {
@@ -740,7 +740,7 @@ section#knowledge {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    background: url('../Images/zcontact.jpg');
+    background: url('../Images/contact_me_cta_section.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
