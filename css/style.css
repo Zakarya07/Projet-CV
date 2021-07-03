@@ -661,13 +661,17 @@ section#knowledge { width: auto; background-color: #1A1E23; padding: 2% 0; }
 
 #knowledge-items { display: flex; flex-wrap: wrap; margin: 10vh auto; padding: 1em 0; }
 
-.knowledge-item { width: 50%; margin-bottom: 50px; display: flex; justify-content: center; padding: .25em; align-items: center; }
+#knowledge-items > p { width: 100%; text-align: center; margin-bottom: 10vh; font-style: italic; text-decoration: underline 1px whitesmoke; }
+
+#knowledge-items > p:not(:first-of-type) { margin-top: 5vh; }
+
+.knowledge-item { margin-bottom: 3.5vh; display: flex; padding: .25em; align-items: center; flex-basis: 50%; flex-grow: 1; justify-content: center; }
 
 .knowledge-item:nth-last-of-type(-n+2) { margin-bottom: 0; }
 
-.knowledge-item .label { text-align: right; padding: 0 1em; flex-basis: 5vw; flex-grow: 1; }
+.knowledge-item .label { padding: 0 .25em; flex-basis: 7.5vw; }
 
-.skill-items { display: flex; flex-direction: row; margin-top: 7.5vh; justify-content: space-evenly; text-align: center; width: 80%; margin: auto; flex-wrap: wrap; }
+.skill-items { display: flex; flex-direction: row; margin-top: 7.5vh; justify-content: space-evenly; text-align: center; width: 80%; margin: 5vh auto; flex-wrap: wrap; }
 
 .skill-items .skill-item { display: flex; flex-direction: column; align-items: center; }
 
@@ -816,7 +820,7 @@ footer > div > h3 { font-size: 2em; color: whitesmoke; margin-top: 30px; font-fa
 #myBtn:hover { transform: scale(0.975); outline: 1px solid white; outline-offset: -3px; background-color: #15d6ac; color: black; }
 
 /* --------------------------------------------- D É C L A R A T I O N ___ A N I M A T I O N ------------------------------------------------- */
-.progress-bar { height: 1.5vh; background-color: #e9e0e0; border-radius: 6px; display: flex; flex-basis: 20vw; flex-grow: 1; }
+.progress-bar { height: 1.5vh; background-color: #e9e0e0; border-radius: 10px; display: flex; flex-basis: 27.5vw; }
 
 .progress-value { background-color: #24BFBA; border-radius: 6px; height: 100%; display: inline-block; transition: 0.2s all linear; width: 90%; }
 
@@ -838,6 +842,10 @@ footer > div > h3 { font-size: 2em; color: whitesmoke; margin-top: 30px; font-fa
 .progress-value.wordpress { animation: progress-wordpress 4.5s ease-in-out forwards; -webkit-animation: progress-wordpress 4.5s ease-in-out forwards; background-image: linear-gradient(-45deg, rgba(255, 255, 255, 0.2) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.2) 50%, rgba(255, 255, 255, 0.2) 75%, transparent 75%, transparent); }
 
 .progress-value.bootstrap { animation: progress-bootstrap 4.5s ease-in-out forwards; -webkit-animation: progress-bootstrap 4.5s ease-in-out forwards; background-image: linear-gradient(-45deg, rgba(255, 255, 255, 0.2) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.2) 50%, rgba(255, 255, 255, 0.2) 75%, transparent 75%, transparent); }
+
+.progress-value.reactjs { animation: progress-react_js 4.5s ease-in-out forwards; -webkit-animation: progress-react_js 4.5s ease-in-out forwards; background-image: linear-gradient(-45deg, rgba(255, 255, 255, 0.2) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.2) 50%, rgba(255, 255, 255, 0.2) 75%, transparent 75%, transparent); }
+
+.progress-value.angularjs { animation: progress-angular_js 4.5s ease-in-out forwards; -webkit-animation: progress-angular_js 4.5s ease-in-out forwards; background-image: linear-gradient(-45deg, rgba(255, 255, 255, 0.2) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.2) 50%, rgba(255, 255, 255, 0.2) 75%, transparent 75%, transparent); }
 
 @keyframes progress-html { from { width: 0; }
   to { width: 75%; } }
@@ -869,6 +877,14 @@ footer > div > h3 { font-size: 2em; color: whitesmoke; margin-top: 30px; font-fa
 /*-------------------animation bootstrap---------------*/
 @keyframes progress-bootstrap { from { width: 0; }
   to { width: 65%; } }
+
+/*-------------------animation react js ---------------*/
+@keyframes progress-react_js { from { width: 0; }
+  to { width: 45%; } }
+
+/*-------------------animation angular---------------*/
+@keyframes progress-angular_js { from { width: 0; }
+  to { width: 40%; } }
 
 @keyframes big { from { opacity: 0;
     transform: scale(0.2);

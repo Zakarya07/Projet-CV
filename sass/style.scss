@@ -587,26 +587,37 @@ section#knowledge {
     flex-wrap: wrap;
     margin: 10vh auto;
     padding: 1em 0;
+
+    & > p{
+        width: 100%;
+        text-align: center;
+        margin-bottom: 10vh;
+        font-style: italic;
+        text-decoration: underline 1px whitesmoke;
+    }
+
+    & > p:not(:first-of-type){
+        margin-top: 5vh;
+    }
 }
 
 // individual progress bar
 .knowledge-item {
-    width: 50%;
-    margin-bottom: 50px;
+    margin-bottom: 3.5vh;
     display: flex;
-    justify-content: center;
     padding: .25em;
     align-items: center;
+    flex-basis: 50%;
+    flex-grow: 1;
+    justify-content: center;
 
     &:nth-last-of-type(-n+2) {
         margin-bottom: 0;
     }
 
     .label {
-        text-align: right;
-        padding: 0 1em;
-        flex-basis: 5vw;
-        flex-grow: 1;
+        padding: 0 .25em;
+        flex-basis: 7.5vw;
     }
 }
 
@@ -619,12 +630,10 @@ section#knowledge {
     justify-content: space-evenly;
     text-align: center;
     width: 80%;
-    margin: auto;
+    margin: 5vh auto;
     flex-wrap: wrap;
 
 // individual item
-
-
 .skill-item{
     display: flex;
     flex-direction: column;
@@ -1169,10 +1178,9 @@ a {
 .progress-bar {
     height: 1.5vh;
     background-color: #e9e0e0;
-    border-radius: 6px;
+    border-radius: 10px;
     display: flex;
-    flex-basis: 20vw;
-    flex-grow: 1;
+    flex-basis: 27.5vw;
 }
 
 .progress-value {
@@ -1252,6 +1260,22 @@ a {
     &.bootstrap {
         animation: progress-bootstrap 4.5s ease-in-out forwards;
         -webkit-animation: progress-bootstrap 4.5s ease-in-out forwards;
+        background-image: -webkit-linear-gradient(135deg, rgba(255, 255, 255, 0.2) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.2) 50%, rgba(255, 255, 255, 0.2) 75%, transparent 75%, transparent);
+        background-image: -o-linear-gradient(135deg, rgba(255, 255, 255, 0.2) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.2) 50%, rgba(255, 255, 255, 0.2) 75%, transparent 75%, transparent);
+        background-image: linear-gradient(-45deg, rgba(255, 255, 255, 0.2) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.2) 50%, rgba(255, 255, 255, 0.2) 75%, transparent 75%, transparent);
+    }
+
+    &.reactjs {
+        animation: progress-react_js 4.5s ease-in-out forwards;
+        -webkit-animation: progress-react_js 4.5s ease-in-out forwards;
+        background-image: -webkit-linear-gradient(135deg, rgba(255, 255, 255, 0.2) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.2) 50%, rgba(255, 255, 255, 0.2) 75%, transparent 75%, transparent);
+        background-image: -o-linear-gradient(135deg, rgba(255, 255, 255, 0.2) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.2) 50%, rgba(255, 255, 255, 0.2) 75%, transparent 75%, transparent);
+        background-image: linear-gradient(-45deg, rgba(255, 255, 255, 0.2) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.2) 50%, rgba(255, 255, 255, 0.2) 75%, transparent 75%, transparent);
+    }
+
+    &.angularjs {
+        animation: progress-angular_js 4.5s ease-in-out forwards;
+        -webkit-animation: progress-angular_js 4.5s ease-in-out forwards;
         background-image: -webkit-linear-gradient(135deg, rgba(255, 255, 255, 0.2) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.2) 50%, rgba(255, 255, 255, 0.2) 75%, transparent 75%, transparent);
         background-image: -o-linear-gradient(135deg, rgba(255, 255, 255, 0.2) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.2) 50%, rgba(255, 255, 255, 0.2) 75%, transparent 75%, transparent);
         background-image: linear-gradient(-45deg, rgba(255, 255, 255, 0.2) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.2) 50%, rgba(255, 255, 255, 0.2) 75%, transparent 75%, transparent);
@@ -1351,6 +1375,36 @@ a {
         width: 65%;
     }
 }
+
+/*-------------------animation react js ---------------*/
+
+@keyframes progress-react_js {
+    from {
+        width: 0;
+    }
+
+    to {
+        width: 45%;
+    }
+}
+
+/*-------------------animation angular---------------*/
+
+@keyframes progress-angular_js {
+    from {
+        width: 0;
+    }
+
+    to {
+        width: 40%;
+    }
+}
+
+
+
+
+
+// Animation for the h1 of the header
 
 @keyframes big {
     from {
