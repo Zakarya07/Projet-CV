@@ -661,7 +661,15 @@ section#knowledge { width: auto; background-color: #1A1E23; padding: 2% 0; }
 
 #knowledge-items { display: flex; flex-wrap: wrap; margin: 10vh auto; padding: 1em 0; }
 
-#knowledge-items > p { width: 100%; text-align: center; margin-bottom: 10vh; font-style: italic; text-decoration: underline 1px whitesmoke; }
+#knowledge-items > p { width: 100%; text-align: center; margin-bottom: 10vh; font-style: italic; text-decoration: underline 1px whitesmoke; position: relative; display: block; }
+
+#knowledge-items > p::after { content: ""; position: absolute; top: 50%; transform: translateY(-50%); margin: 0 1vw; }
+
+#knowledge-items > p:nth-of-type(1)::after { content: url("../Images/front-end.png"); }
+
+#knowledge-items > p:nth-of-type(2)::after { content: url("../Images/back-end.png"); }
+
+#knowledge-items > p:nth-of-type(3)::after { content: url("../Images/framework.png"); }
 
 #knowledge-items > p:not(:first-of-type) { margin-top: 5vh; }
 
