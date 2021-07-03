@@ -720,15 +720,13 @@ section#knowledge { width: auto; background-color: #1A1E23; padding: 2% 0; }
 #hobby .fas { margin-right: 10px; font-size: 15px; }
 
 /*----------------------- DIv à fond vert contact----------------------*/
-.contact-btn { display: flex; flex-direction: column; justify-content: center; background: url("../Images/contact_me_cta_section.jpg"); background-size: cover; background-repeat: no-repeat; background-position: center; text-align: center; padding: 60px 0; position: relative; height: 300px; }
+.contact-btn { display: flex; flex-direction: column; justify-content: space-evenly; background: linear-gradient(45deg, rgba(34, 209, 197, 0.5), rgba(34, 209, 197, 0.75)), url("../Images/contact_me_cta_section.jpg"); background-size: cover; background-repeat: no-repeat; background-position: center; text-align: center; position: relative; height: 33vh; }
 
-.contact-btn .green { background-color: rgba(34, 209, 197, 0.85); height: 100%; position: absolute; width: 100%; }
+.contact-btn h1 { color: white; font-family: 'Open-Sans-Serif', sans-serif; font-weight: 300; }
 
-.contact-btn a { text-transform: uppercase; font-family: 'Montserrat', sans-serif; border: 1px solid white; border-radius: 3.5px; background-color: transparent; font-weight: 700; font-size: 18px; padding: 12px; z-index: 10; margin: 30px auto; width: 20%; }
+.contact-btn a { text-transform: uppercase; font-family: 'Open-Sans-Serif', sans-serif; border: 1px solid white; border-radius: 5px; background-color: transparent; text-decoration: none; font-weight: 500; font-size: 1.1em; padding: .75em; margin: 2vh auto; width: 20%; }
 
 .contact-btn a:hover { color: #4ab9b2; background-color: white; transition: 0.8s; }
-
-.contact-btn h1 { color: white; font-family: 'Montserrat', sans-serif; font-weight: 100; z-index: 10; }
 
 /* ------------------Section contact (footer bas de page) ------------------------ */
 footer#contact { background-image: url("../Images/contact_section_bg.jpg"); background-size: cover; padding: 2% 0 1%; }
