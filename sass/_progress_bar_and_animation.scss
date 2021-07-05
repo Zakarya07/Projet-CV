@@ -1,0 +1,225 @@
+.progress-bar {
+    height: 1.5vh;
+    background-color: #e9e0e0;
+    border-radius: 7px;
+    display: flex;
+    flex-basis: 27.5vw;
+}
+
+.progress-value {
+    background-color: #24BFBA;
+    border-radius: 7px;
+    height: 100%;
+    display: inline-block;
+    transition: 0.2s all linear;
+    width: 90%;
+}
+
+.progress-bar:hover {
+    background-color: #000000;
+    transition: 3.9s;
+    border: 1px solid white;
+}
+
+
+/*-----------------------Animation Call---------------------*/
+
+.progress-value {
+    &.html {
+        animation: progress-html 4.5s ease-in-out forwards;
+        -webkit-animation: progress-html 4.5s ease-in-out forwards;
+        background-image: -webkit-linear-gradient(135deg, rgba(255, 255, 255, 0.2) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.2) 50%, rgba(255, 255, 255, 0.2) 75%, transparent 75%, transparent);
+        background-image: -o-linear-gradient(135deg, rgba(255, 255, 255, 0.2) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.2) 50%, rgba(255, 255, 255, 0.2) 75%, transparent 75%, transparent);
+        background-image: linear-gradient(-45deg, rgba(255, 255, 255, 0.2) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.2) 50%, rgba(255, 255, 255, 0.2) 75%, transparent 75%, transparent);
+    }
+
+    &.js {
+        animation: progress-js 4.5s ease-in-out forwards;
+        -webkit-animation: progress-js 4.5s ease-in-out forwards;
+        background-image: -webkit-linear-gradient(135deg, rgba(255, 255, 255, 0.2) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.2) 50%, rgba(255, 255, 255, 0.2) 75%, transparent 75%, transparent);
+        background-image: -o-linear-gradient(135deg, rgba(255, 255, 255, 0.2) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.2) 50%, rgba(255, 255, 255, 0.2) 75%, transparent 75%, transparent);
+        background-image: linear-gradient(-45deg, rgba(255, 255, 255, 0.2) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.2) 50%, rgba(255, 255, 255, 0.2) 75%, transparent 75%, transparent);
+    }
+
+    &.css {
+        animation: progress-css 4.5s ease-in-out forwards;
+        -webkit-animation: progress-css 4.5s ease-in-out forwards;
+        background-image: -webkit-linear-gradient(135deg, rgba(255, 255, 255, 0.2) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.2) 50%, rgba(255, 255, 255, 0.2) 75%, transparent 75%, transparent);
+        background-image: -o-linear-gradient(135deg, rgba(255, 255, 255, 0.2) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.2) 50%, rgba(255, 255, 255, 0.2) 75%, transparent 75%, transparent);
+        background-image: linear-gradient(-45deg, rgba(255, 255, 255, 0.2) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.2) 50%, rgba(255, 255, 255, 0.2) 75%, transparent 75%, transparent);
+    }
+
+    &.php {
+        animation: progress-php 4.5s ease-in-out forwards;
+        -webkit-animation: progress-php 4.5s ease-in-out forwards;
+        background-image: -webkit-linear-gradient(135deg, rgba(255, 255, 255, 0.2) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.2) 50%, rgba(255, 255, 255, 0.2) 75%, transparent 75%, transparent);
+        background-image: -o-linear-gradient(135deg, rgba(255, 255, 255, 0.2) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.2) 50%, rgba(255, 255, 255, 0.2) 75%, transparent 75%, transparent);
+        background-image: linear-gradient(-45deg, rgba(255, 255, 255, 0.2) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.2) 50%, rgba(255, 255, 255, 0.2) 75%, transparent 75%, transparent);
+    }
+
+    &.nodejs {
+        animation: progress-nodejs 4.5s ease-in-out forwards;
+        -webkit-animation: progress-nodejs 4.5s ease-in-out forwards;
+        background-image: -webkit-linear-gradient(135deg, rgba(255, 255, 255, 0.2) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.2) 50%, rgba(255, 255, 255, 0.2) 75%, transparent 75%, transparent);
+        background-image: -o-linear-gradient(135deg, rgba(255, 255, 255, 0.2) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.2) 50%, rgba(255, 255, 255, 0.2) 75%, transparent 75%, transparent);
+        background-image: linear-gradient(-45deg, rgba(255, 255, 255, 0.2) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.2) 50%, rgba(255, 255, 255, 0.2) 75%, transparent 75%, transparent);
+    }
+
+    &.sql {
+        animation: progress-sql 4.5s ease-in-out forwards;
+        -webkit-animation: progress-sql 4.5s ease-in-out forwards;
+        background-image: -webkit-linear-gradient(135deg, rgba(255, 255, 255, 0.2) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.2) 50%, rgba(255, 255, 255, 0.2) 75%, transparent 75%, transparent);
+        background-image: -o-linear-gradient(135deg, rgba(255, 255, 255, 0.2) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.2) 50%, rgba(255, 255, 255, 0.2) 75%, transparent 75%, transparent);
+        background-image: linear-gradient(-45deg, rgba(255, 255, 255, 0.2) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.2) 50%, rgba(255, 255, 255, 0.2) 75%, transparent 75%, transparent);
+    }
+
+    &.wordpress {
+        animation: progress-wordpress 4.5s ease-in-out forwards;
+        -webkit-animation: progress-wordpress 4.5s ease-in-out forwards;
+        background-image: -webkit-linear-gradient(135deg, rgba(255, 255, 255, 0.2) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.2) 50%, rgba(255, 255, 255, 0.2) 75%, transparent 75%, transparent);
+        background-image: -o-linear-gradient(135deg, rgba(255, 255, 255, 0.2) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.2) 50%, rgba(255, 255, 255, 0.2) 75%, transparent 75%, transparent);
+        background-image: linear-gradient(-45deg, rgba(255, 255, 255, 0.2) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.2) 50%, rgba(255, 255, 255, 0.2) 75%, transparent 75%, transparent);
+    }
+
+    &.bootstrap {
+        animation: progress-bootstrap 4.5s ease-in-out forwards;
+        -webkit-animation: progress-bootstrap 4.5s ease-in-out forwards;
+        background-image: -webkit-linear-gradient(135deg, rgba(255, 255, 255, 0.2) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.2) 50%, rgba(255, 255, 255, 0.2) 75%, transparent 75%, transparent);
+        background-image: -o-linear-gradient(135deg, rgba(255, 255, 255, 0.2) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.2) 50%, rgba(255, 255, 255, 0.2) 75%, transparent 75%, transparent);
+        background-image: linear-gradient(-45deg, rgba(255, 255, 255, 0.2) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.2) 50%, rgba(255, 255, 255, 0.2) 75%, transparent 75%, transparent);
+    }
+
+    &.reactjs {
+        animation: progress-react_js 4.5s ease-in-out forwards;
+        -webkit-animation: progress-react_js 4.5s ease-in-out forwards;
+        background-image: -webkit-linear-gradient(135deg, rgba(255, 255, 255, 0.2) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.2) 50%, rgba(255, 255, 255, 0.2) 75%, transparent 75%, transparent);
+        background-image: -o-linear-gradient(135deg, rgba(255, 255, 255, 0.2) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.2) 50%, rgba(255, 255, 255, 0.2) 75%, transparent 75%, transparent);
+        background-image: linear-gradient(-45deg, rgba(255, 255, 255, 0.2) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.2) 50%, rgba(255, 255, 255, 0.2) 75%, transparent 75%, transparent);
+    }
+
+    &.angularjs {
+        animation: progress-angular_js 4.5s ease-in-out forwards;
+        -webkit-animation: progress-angular_js 4.5s ease-in-out forwards;
+        background-image: -webkit-linear-gradient(135deg, rgba(255, 255, 255, 0.2) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.2) 50%, rgba(255, 255, 255, 0.2) 75%, transparent 75%, transparent);
+        background-image: -o-linear-gradient(135deg, rgba(255, 255, 255, 0.2) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.2) 50%, rgba(255, 255, 255, 0.2) 75%, transparent 75%, transparent);
+        background-image: linear-gradient(-45deg, rgba(255, 255, 255, 0.2) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.2) 50%, rgba(255, 255, 255, 0.2) 75%, transparent 75%, transparent);
+    }
+}
+
+@keyframes progress-html {
+    from {
+        width: 0;
+    }
+
+    to {
+        width: 75%;
+    }
+}
+
+/*---------------------- Animation  javascript-------------*/
+
+@keyframes progress-js {
+    from {
+        width: 0;
+    }
+
+    to {
+        width: 48%;
+    }
+}
+
+/*-------------------animation css---------------*/
+
+@keyframes progress-css {
+    from {
+        width: 0;
+    }
+
+    to {
+        width: 75%;
+    }
+}
+
+/*-------------------animation php---------------*/
+
+@keyframes progress-php {
+    from {
+        width: 0;
+    }
+
+    to {
+        width: 42%;
+    }
+}
+
+/*-------------------animation node js---------------*/
+
+@keyframes progress-nodejs {
+    from {
+        width: 0;
+    }
+
+    to {
+        width: 25%;
+    }
+}
+
+/*-------------------animation SQL---------------*/
+
+@keyframes progress-sql {
+    from {
+        width: 0;
+    }
+
+    to {
+        width: 74%;
+    }
+}
+
+/*-------------------animation wordpress---------------*/
+
+@keyframes progress-wordpress {
+    from {
+        width: 0;
+    }
+
+    to {
+        width: 55%;
+    }
+}
+
+/*-------------------animation bootstrap---------------*/
+
+@keyframes progress-bootstrap {
+    from {
+        width: 0;
+    }
+
+    to {
+        width: 65%;
+    }
+}
+
+/*-------------------animation react js ---------------*/
+
+@keyframes progress-react_js {
+    from {
+        width: 0;
+    }
+
+    to {
+        width: 45%;
+    }
+}
+
+/*-------------------animation angular---------------*/
+
+@keyframes progress-angular_js {
+    from {
+        width: 0;
+    }
+
+    to {
+        width: 40%;
+    }
+}

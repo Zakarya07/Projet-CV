@@ -1,5 +1,5 @@
-@import "responsive", "circle", "utilities", 'fonts';
-;
+@import "responsive", "circle", "utilities", 'fonts', 'progress_bar_and_animation', 'font-awesome_icons_custom';
+
 
 * {
     margin: 0;
@@ -14,6 +14,7 @@ html {
 
 body {
     color: white;
+    position: relative;
 }
 
 html,
@@ -31,7 +32,7 @@ a {
     color: #fafafa;
 }
 
-/*-------------------------- En tête -----------------------------*/
+/*-------------------------- Header and top page -----------------------------*/
 
 header {
     background-image: url("../Images/header_bg.jpg");
@@ -351,7 +352,7 @@ section#infos {
 
 section#experiences {
     width: auto;
-    background: linear-gradient(45deg, rgba(0, 0, 0, 0.75), gray), url(/Images/newton.jpg);
+    background: linear-gradient(45deg, rgba(0, 0, 0, 0.75), gray), url("/Images/newton.jpg");
     background-size: 100vw;
     background-position: center 0%;
     background-attachment: fixed;
@@ -377,7 +378,7 @@ section#experiences {
     color: #ffffff;
 }
 
-/*---------------T-I-ME-L-I-N-E----------------*/
+/*---------------T-I-M-E-L-I-N-E----------------*/
 
 div#timeline {
     margin: 20px auto;
@@ -798,9 +799,7 @@ section#knowledge {
     font-size: 15px;
 }
 
-
-
-/*----------------------- DIv à fond vert contact----------------------*/
+/*----------------------- Div à fond vert contact----------------------*/
 
 .contact-btn {
     display: flex;
@@ -840,7 +839,7 @@ section#knowledge {
 
 }
 
-/* ------------------Section contact (footer bas de page) ------------------------ */
+/* ------------------Footer ------------------------ */
 
 footer {
     &#contact {
@@ -871,6 +870,10 @@ footer {
 
 input {
     border-radius: 2px;
+
+    &:focus{
+        outline: none;
+    }
 }
 
 footer input {
@@ -882,12 +885,12 @@ footer input {
     }
 }
 
-.col-50 {
+.names_container_fifty_width {
     display: flex;
     justify-content: space-between;
 
     input {
-        width: 47%;
+        width: 47.5%;
         border: none;
     }
 }
@@ -931,9 +934,10 @@ input[type="submit"]#send {
     }
 }
 
-.barrelaterale {
-    background-color: black;
+footer .barrelaterale {
     height: 1px;
+    border: none;
+    background-color: rgba(255,255,255,.1);
 }
 
 #hr1 {
@@ -941,11 +945,6 @@ input[type="submit"]#send {
     margin-bottom: 5vh;
 }
 
-#hr2 {
-    border: none;
-    background-color: rgb(8, 117, 103);
-    margin-top: 10px;
-}
 
 footer #cprt {
     text-align: center;
@@ -1015,149 +1014,19 @@ a {
     font-weight: 700;
 }
 
-/* #top-left {
-  }
-  #top-right {
-   
-  }
-  
-  #bottom-right {
-  }
-  
-  #bottom-left {
-  } */
-
-.col {
+.form_layout_adjust {
     display: flex;
     flex-direction: column;
 }
 
-/*----------------------font-awesome--------------------*/
+// Socials container 
 
-.fa-phone {
-    border-radius: 3px;
-    background-color: rgb(255, 255, 255);
-    color: rgb(0, 0, 0);
-    font-size: 1em;
-    padding-top: 7px;
-    width: auto;
-    text-align: center;
-    border: 1.5px solid rgb(0, 0, 0);
-    padding: 1%;
-    min-width: 3vw;
-    margin: 0 1vw 0 0;
-}
-
-.fa-user-plus {
-    border-radius: 3px;
+.socials_container{
     background-color: black;
-    color: white;
-    font-size: 1em;
-    padding-top: 7px;
-    width: auto;
-    text-align: center;
-    border: 1.5px solid white;
-    padding: 1%;
-    min-width: 3vw;
-    margin: 0 1vw 0 0;
-}
-
-.fa-envelope-open {
-    border-radius: 3px;
-    background-color: rgb(255, 255, 255);
-    color: #1c86ff;
-    font-size: 1em;
-    padding-top: 7px;
-    width: auto;
-    text-align: center;
-    border: 1.5px solid rgb(0, 0, 0);
-    padding: 1%;
-    min-width: 3vw;
-    margin: 0 1vw 0 0;
-}
-
-.fa-map-marker-alt {
-    border-radius: 3px;
-    background-color: rgb(255, 255, 255);
-    color: #1900ff;
-    font-size: 1em;
-    padding: .5vh 0;
-    width: auto;
-    text-align: center;
-    border: 1.5px solid rgb(0, 0, 0);
-    min-width: 3vw;
-    margin: 0 1vw 0 0;
-}
-
-.fa-facebook,
-.fa-linkedin,
-.fa-twitter {
-    color: white;
-    font-size: 21px;
-}
-
-/* --------------------------- fa :hover------------------------- */
-
-.fa-facebook:hover {
-    color: #466bbb;
-    font-size: 29px;
-    transition: 0.3s;
-}
-
-.fa-linkedin:hover {
-    color: #007bb6;
-    font-size: 29px;
-    transition: 0.3s;
-}
-
-.fa-twitter:hover {
-    color: #1da1f2;
-    font-size: 29px;
-    transition: 0.3s;
-}
-
-.fa-phone:hover {
-    color: #3ada8a;
-    background-color: white;
-}
-
-.fa-user-plus:hover {
-    background-color: white;
-    color: #e95500;
-    transition: 0.4s;
-    padding: 19px;
-}
-
-.fa-envelope-open:hover {
-    -webkit-transition: 0.8s;
-    -o-transition: 0.8s;
-    transition: 0.8s;
-    color: #1c86ff;
-    background-color: #e9dfdf;
-}
-
-.fa-map-marker-alt:hover {
-    color: #d11414;
-    -webkit-transition: 0.8s;
-    -o-transition: 0.8s;
-    transition: 0.8s;
-}
-
-.fa-briefcase {
-    font-size: 22px;
-    color: black;
-    margin-right: 15px;
-}
-
-.fa-school {
-    font-size: 22px;
-    margin-right: 15px;
-    color: black;
-}
-
-.fa-crown {
-    color: #ffd900;
-    margin-right: 15px;
+    position: fixed;
+    min-width: 5vw;
+    min-height: 10vh;
+    top: 50%;
 }
 
 /*---------------------------------------Button top------------------------------------ */
@@ -1196,249 +1065,5 @@ a {
     }
 }
 
-/* --------------------------------------------- D É C L A R A T I O N ___ A N I M A T I O N ------------------------------------------------- */
-
-.progress-bar {
-    height: 1.5vh;
-    background-color: #e9e0e0;
-    border-radius: 7px;
-    display: flex;
-    flex-basis: 27.5vw;
-}
-
-.progress-value {
-    background-color: #24BFBA;
-    border-radius: 7px;
-    height: 100%;
-    display: inline-block;
-    transition: 0.2s all linear;
-    width: 90%;
-}
-
-.progress-bar:hover {
-    background-color: #000000;
-    transition: 3.9s;
-    border: 1px solid white;
-}
-
-/*-----------------------Animation HTML---------------------*/
-
-.progress-value {
-    &.html {
-        animation: progress-html 4.5s ease-in-out forwards;
-        -webkit-animation: progress-html 4.5s ease-in-out forwards;
-        background-image: -webkit-linear-gradient(135deg, rgba(255, 255, 255, 0.2) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.2) 50%, rgba(255, 255, 255, 0.2) 75%, transparent 75%, transparent);
-        background-image: -o-linear-gradient(135deg, rgba(255, 255, 255, 0.2) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.2) 50%, rgba(255, 255, 255, 0.2) 75%, transparent 75%, transparent);
-        background-image: linear-gradient(-45deg, rgba(255, 255, 255, 0.2) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.2) 50%, rgba(255, 255, 255, 0.2) 75%, transparent 75%, transparent);
-    }
-
-    &.js {
-        animation: progress-js 4.5s ease-in-out forwards;
-        -webkit-animation: progress-js 4.5s ease-in-out forwards;
-        background-image: -webkit-linear-gradient(135deg, rgba(255, 255, 255, 0.2) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.2) 50%, rgba(255, 255, 255, 0.2) 75%, transparent 75%, transparent);
-        background-image: -o-linear-gradient(135deg, rgba(255, 255, 255, 0.2) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.2) 50%, rgba(255, 255, 255, 0.2) 75%, transparent 75%, transparent);
-        background-image: linear-gradient(-45deg, rgba(255, 255, 255, 0.2) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.2) 50%, rgba(255, 255, 255, 0.2) 75%, transparent 75%, transparent);
-    }
-
-    &.css {
-        animation: progress-css 4.5s ease-in-out forwards;
-        -webkit-animation: progress-css 4.5s ease-in-out forwards;
-        background-image: -webkit-linear-gradient(135deg, rgba(255, 255, 255, 0.2) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.2) 50%, rgba(255, 255, 255, 0.2) 75%, transparent 75%, transparent);
-        background-image: -o-linear-gradient(135deg, rgba(255, 255, 255, 0.2) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.2) 50%, rgba(255, 255, 255, 0.2) 75%, transparent 75%, transparent);
-        background-image: linear-gradient(-45deg, rgba(255, 255, 255, 0.2) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.2) 50%, rgba(255, 255, 255, 0.2) 75%, transparent 75%, transparent);
-    }
-
-    &.php {
-        animation: progress-php 4.5s ease-in-out forwards;
-        -webkit-animation: progress-php 4.5s ease-in-out forwards;
-        background-image: -webkit-linear-gradient(135deg, rgba(255, 255, 255, 0.2) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.2) 50%, rgba(255, 255, 255, 0.2) 75%, transparent 75%, transparent);
-        background-image: -o-linear-gradient(135deg, rgba(255, 255, 255, 0.2) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.2) 50%, rgba(255, 255, 255, 0.2) 75%, transparent 75%, transparent);
-        background-image: linear-gradient(-45deg, rgba(255, 255, 255, 0.2) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.2) 50%, rgba(255, 255, 255, 0.2) 75%, transparent 75%, transparent);
-    }
-
-    &.nodejs {
-        animation: progress-nodejs 4.5s ease-in-out forwards;
-        -webkit-animation: progress-nodejs 4.5s ease-in-out forwards;
-        background-image: -webkit-linear-gradient(135deg, rgba(255, 255, 255, 0.2) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.2) 50%, rgba(255, 255, 255, 0.2) 75%, transparent 75%, transparent);
-        background-image: -o-linear-gradient(135deg, rgba(255, 255, 255, 0.2) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.2) 50%, rgba(255, 255, 255, 0.2) 75%, transparent 75%, transparent);
-        background-image: linear-gradient(-45deg, rgba(255, 255, 255, 0.2) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.2) 50%, rgba(255, 255, 255, 0.2) 75%, transparent 75%, transparent);
-    }
-
-    &.sql {
-        animation: progress-sql 4.5s ease-in-out forwards;
-        -webkit-animation: progress-sql 4.5s ease-in-out forwards;
-        background-image: -webkit-linear-gradient(135deg, rgba(255, 255, 255, 0.2) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.2) 50%, rgba(255, 255, 255, 0.2) 75%, transparent 75%, transparent);
-        background-image: -o-linear-gradient(135deg, rgba(255, 255, 255, 0.2) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.2) 50%, rgba(255, 255, 255, 0.2) 75%, transparent 75%, transparent);
-        background-image: linear-gradient(-45deg, rgba(255, 255, 255, 0.2) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.2) 50%, rgba(255, 255, 255, 0.2) 75%, transparent 75%, transparent);
-    }
-
-    &.wordpress {
-        animation: progress-wordpress 4.5s ease-in-out forwards;
-        -webkit-animation: progress-wordpress 4.5s ease-in-out forwards;
-        background-image: -webkit-linear-gradient(135deg, rgba(255, 255, 255, 0.2) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.2) 50%, rgba(255, 255, 255, 0.2) 75%, transparent 75%, transparent);
-        background-image: -o-linear-gradient(135deg, rgba(255, 255, 255, 0.2) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.2) 50%, rgba(255, 255, 255, 0.2) 75%, transparent 75%, transparent);
-        background-image: linear-gradient(-45deg, rgba(255, 255, 255, 0.2) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.2) 50%, rgba(255, 255, 255, 0.2) 75%, transparent 75%, transparent);
-    }
-
-    &.bootstrap {
-        animation: progress-bootstrap 4.5s ease-in-out forwards;
-        -webkit-animation: progress-bootstrap 4.5s ease-in-out forwards;
-        background-image: -webkit-linear-gradient(135deg, rgba(255, 255, 255, 0.2) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.2) 50%, rgba(255, 255, 255, 0.2) 75%, transparent 75%, transparent);
-        background-image: -o-linear-gradient(135deg, rgba(255, 255, 255, 0.2) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.2) 50%, rgba(255, 255, 255, 0.2) 75%, transparent 75%, transparent);
-        background-image: linear-gradient(-45deg, rgba(255, 255, 255, 0.2) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.2) 50%, rgba(255, 255, 255, 0.2) 75%, transparent 75%, transparent);
-    }
-
-    &.reactjs {
-        animation: progress-react_js 4.5s ease-in-out forwards;
-        -webkit-animation: progress-react_js 4.5s ease-in-out forwards;
-        background-image: -webkit-linear-gradient(135deg, rgba(255, 255, 255, 0.2) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.2) 50%, rgba(255, 255, 255, 0.2) 75%, transparent 75%, transparent);
-        background-image: -o-linear-gradient(135deg, rgba(255, 255, 255, 0.2) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.2) 50%, rgba(255, 255, 255, 0.2) 75%, transparent 75%, transparent);
-        background-image: linear-gradient(-45deg, rgba(255, 255, 255, 0.2) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.2) 50%, rgba(255, 255, 255, 0.2) 75%, transparent 75%, transparent);
-    }
-
-    &.angularjs {
-        animation: progress-angular_js 4.5s ease-in-out forwards;
-        -webkit-animation: progress-angular_js 4.5s ease-in-out forwards;
-        background-image: -webkit-linear-gradient(135deg, rgba(255, 255, 255, 0.2) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.2) 50%, rgba(255, 255, 255, 0.2) 75%, transparent 75%, transparent);
-        background-image: -o-linear-gradient(135deg, rgba(255, 255, 255, 0.2) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.2) 50%, rgba(255, 255, 255, 0.2) 75%, transparent 75%, transparent);
-        background-image: linear-gradient(-45deg, rgba(255, 255, 255, 0.2) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.2) 50%, rgba(255, 255, 255, 0.2) 75%, transparent 75%, transparent);
-    }
-}
-
-@keyframes progress-html {
-    from {
-        width: 0;
-    }
-
-    to {
-        width: 75%;
-    }
-}
-
-/*---------------------- Animation  javascript-------------*/
-
-@keyframes progress-js {
-    from {
-        width: 0;
-    }
-
-    to {
-        width: 48%;
-    }
-}
-
-/*-------------------animation css---------------*/
-
-@keyframes progress-css {
-    from {
-        width: 0;
-    }
-
-    to {
-        width: 75%;
-    }
-}
-
-/*-------------------animation php---------------*/
-
-@keyframes progress-php {
-    from {
-        width: 0;
-    }
-
-    to {
-        width: 42%;
-    }
-}
-
-/*-------------------animation node js---------------*/
-
-@keyframes progress-nodejs {
-    from {
-        width: 0;
-    }
-
-    to {
-        width: 25%;
-    }
-}
-
-/*-------------------animation SQL---------------*/
-
-@keyframes progress-sql {
-    from {
-        width: 0;
-    }
-
-    to {
-        width: 74%;
-    }
-}
-
-/*-------------------animation wordpress---------------*/
-
-@keyframes progress-wordpress {
-    from {
-        width: 0;
-    }
-
-    to {
-        width: 55%;
-    }
-}
-
-/*-------------------animation bootstrap---------------*/
-
-@keyframes progress-bootstrap {
-    from {
-        width: 0;
-    }
-
-    to {
-        width: 65%;
-    }
-}
-
-/*-------------------animation react js ---------------*/
-
-@keyframes progress-react_js {
-    from {
-        width: 0;
-    }
-
-    to {
-        width: 45%;
-    }
-}
-
-/*-------------------animation angular---------------*/
-
-@keyframes progress-angular_js {
-    from {
-        width: 0;
-    }
-
-    to {
-        width: 40%;
-    }
-}
 
 
-
-
-
-// Animation for the h1 of the header
-
-@keyframes big {
-    from {
-        opacity: 0;
-        transform: scale(0.2);
-        color: gold;
-    }
-
-    to {
-        opacity: 1;
-        transform: scale(1);
-        color: whitesmoke;
-    }
-}

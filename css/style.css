@@ -475,6 +475,13 @@
 
 @keyframes moveNavBackground { 100% { background-position: right bottom; } }
 
+@keyframes big { from { opacity: 0;
+    transform: scale(0.2);
+    color: gold; }
+  to { opacity: 1;
+    transform: scale(1);
+    color: whitesmoke; } }
+
 @font-face { font-family: "Open-Sans-Serif"; src: url("../Fonts/open-sans/OpenSans-Light.ttf"); font-weight: 300; }
 
 @font-face { font-family: "Open-Sans-Serif"; src: url("../Fonts/open-sans/OpenSans-LightItalic.ttf"); font-weight: 300; font-style: italic; }
@@ -495,11 +502,109 @@
 
 @font-face { font-family: "Open-Sans-Serif"; src: url("../Fonts/open-sans/OpenSans-ExtraBoldItalic.ttf"); font-weight: 800; font-style: italic; }
 
+.progress-bar { height: 1.5vh; background-color: #e9e0e0; border-radius: 7px; display: flex; flex-basis: 27.5vw; }
+
+.progress-value { background-color: #24BFBA; border-radius: 7px; height: 100%; display: inline-block; transition: 0.2s all linear; width: 90%; }
+
+.progress-bar:hover { background-color: #000000; transition: 3.9s; border: 1px solid white; }
+
+/*-----------------------Animation Call---------------------*/
+.progress-value.html { animation: progress-html 4.5s ease-in-out forwards; -webkit-animation: progress-html 4.5s ease-in-out forwards; background-image: linear-gradient(-45deg, rgba(255, 255, 255, 0.2) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.2) 50%, rgba(255, 255, 255, 0.2) 75%, transparent 75%, transparent); }
+
+.progress-value.js { animation: progress-js 4.5s ease-in-out forwards; -webkit-animation: progress-js 4.5s ease-in-out forwards; background-image: linear-gradient(-45deg, rgba(255, 255, 255, 0.2) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.2) 50%, rgba(255, 255, 255, 0.2) 75%, transparent 75%, transparent); }
+
+.progress-value.css { animation: progress-css 4.5s ease-in-out forwards; -webkit-animation: progress-css 4.5s ease-in-out forwards; background-image: linear-gradient(-45deg, rgba(255, 255, 255, 0.2) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.2) 50%, rgba(255, 255, 255, 0.2) 75%, transparent 75%, transparent); }
+
+.progress-value.php { animation: progress-php 4.5s ease-in-out forwards; -webkit-animation: progress-php 4.5s ease-in-out forwards; background-image: linear-gradient(-45deg, rgba(255, 255, 255, 0.2) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.2) 50%, rgba(255, 255, 255, 0.2) 75%, transparent 75%, transparent); }
+
+.progress-value.nodejs { animation: progress-nodejs 4.5s ease-in-out forwards; -webkit-animation: progress-nodejs 4.5s ease-in-out forwards; background-image: linear-gradient(-45deg, rgba(255, 255, 255, 0.2) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.2) 50%, rgba(255, 255, 255, 0.2) 75%, transparent 75%, transparent); }
+
+.progress-value.sql { animation: progress-sql 4.5s ease-in-out forwards; -webkit-animation: progress-sql 4.5s ease-in-out forwards; background-image: linear-gradient(-45deg, rgba(255, 255, 255, 0.2) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.2) 50%, rgba(255, 255, 255, 0.2) 75%, transparent 75%, transparent); }
+
+.progress-value.wordpress { animation: progress-wordpress 4.5s ease-in-out forwards; -webkit-animation: progress-wordpress 4.5s ease-in-out forwards; background-image: linear-gradient(-45deg, rgba(255, 255, 255, 0.2) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.2) 50%, rgba(255, 255, 255, 0.2) 75%, transparent 75%, transparent); }
+
+.progress-value.bootstrap { animation: progress-bootstrap 4.5s ease-in-out forwards; -webkit-animation: progress-bootstrap 4.5s ease-in-out forwards; background-image: linear-gradient(-45deg, rgba(255, 255, 255, 0.2) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.2) 50%, rgba(255, 255, 255, 0.2) 75%, transparent 75%, transparent); }
+
+.progress-value.reactjs { animation: progress-react_js 4.5s ease-in-out forwards; -webkit-animation: progress-react_js 4.5s ease-in-out forwards; background-image: linear-gradient(-45deg, rgba(255, 255, 255, 0.2) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.2) 50%, rgba(255, 255, 255, 0.2) 75%, transparent 75%, transparent); }
+
+.progress-value.angularjs { animation: progress-angular_js 4.5s ease-in-out forwards; -webkit-animation: progress-angular_js 4.5s ease-in-out forwards; background-image: linear-gradient(-45deg, rgba(255, 255, 255, 0.2) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.2) 50%, rgba(255, 255, 255, 0.2) 75%, transparent 75%, transparent); }
+
+@keyframes progress-html { from { width: 0; }
+  to { width: 75%; } }
+
+/*---------------------- Animation  javascript-------------*/
+@keyframes progress-js { from { width: 0; }
+  to { width: 48%; } }
+
+/*-------------------animation css---------------*/
+@keyframes progress-css { from { width: 0; }
+  to { width: 75%; } }
+
+/*-------------------animation php---------------*/
+@keyframes progress-php { from { width: 0; }
+  to { width: 42%; } }
+
+/*-------------------animation node js---------------*/
+@keyframes progress-nodejs { from { width: 0; }
+  to { width: 25%; } }
+
+/*-------------------animation SQL---------------*/
+@keyframes progress-sql { from { width: 0; }
+  to { width: 74%; } }
+
+/*-------------------animation wordpress---------------*/
+@keyframes progress-wordpress { from { width: 0; }
+  to { width: 55%; } }
+
+/*-------------------animation bootstrap---------------*/
+@keyframes progress-bootstrap { from { width: 0; }
+  to { width: 65%; } }
+
+/*-------------------animation react js ---------------*/
+@keyframes progress-react_js { from { width: 0; }
+  to { width: 45%; } }
+
+/*-------------------animation angular---------------*/
+@keyframes progress-angular_js { from { width: 0; }
+  to { width: 40%; } }
+
+/*----------------------font-awesome--------------------*/
+.fa-phone { border-radius: 3px; background-color: white; color: black; font-size: 1em; padding-top: 7px; width: auto; text-align: center; border: 1.5px solid black; padding: 1%; min-width: 3vw; margin: 0 1vw 0 0; }
+
+.fa-user-plus { border-radius: 3px; background-color: black; color: white; font-size: 1em; padding-top: 7px; width: auto; text-align: center; border: 1.5px solid white; padding: 1%; min-width: 3vw; margin: 0 1vw 0 0; }
+
+.fa-envelope-open { border-radius: 3px; background-color: white; color: #1c86ff; font-size: 1em; padding-top: 7px; width: auto; text-align: center; border: 1.5px solid black; padding: 1%; min-width: 3vw; margin: 0 1vw 0 0; }
+
+.fa-map-marker-alt { border-radius: 3px; background-color: white; color: #1900ff; font-size: 1em; padding: .5vh 0; width: auto; text-align: center; border: 1.5px solid black; min-width: 3vw; margin: 0 1vw 0 0; }
+
+.fa-facebook, .fa-linkedin, .fa-twitter { color: white; font-size: 21px; }
+
+/* --------------------------- fa :hover------------------------- */
+.fa-facebook:hover { color: #466bbb; font-size: 29px; transition: 0.3s; }
+
+.fa-linkedin:hover { color: #007bb6; font-size: 29px; transition: 0.3s; }
+
+.fa-twitter:hover { color: #1da1f2; font-size: 29px; transition: 0.3s; }
+
+.fa-phone:hover { color: #3ada8a; background-color: white; }
+
+.fa-user-plus:hover { background-color: white; color: #e95500; transition: 0.4s; padding: 19px; }
+
+.fa-envelope-open:hover { transition: 0.8s; color: #1c86ff; background-color: #e9dfdf; }
+
+.fa-map-marker-alt:hover { color: #d11414; transition: 0.8s; }
+
+.fa-briefcase { font-size: 22px; color: black; margin-right: 15px; }
+
+.fa-school { font-size: 22px; margin-right: 15px; color: black; }
+
+.fa-crown { color: #ffd900; margin-right: 15px; }
+
 * { margin: 0; padding: 0; box-sizing: border-box; font-family: "Open-Sans-Serif", sans-serif; }
 
 html { scroll-behavior: smooth; }
 
-body { color: white; }
+body { color: white; position: relative; }
 
 html, body { width: 100%; height: 100%; }
 
@@ -507,7 +612,7 @@ html, body { width: 100%; height: 100%; }
 
 a { color: #fafafa; }
 
-/*-------------------------- En tête -----------------------------*/
+/*-------------------------- Header and top page -----------------------------*/
 header { background-image: url("../Images/header_bg.jpg"); width: 100%; height: 100vh; background-size: cover; background-position: 0% 100%; padding-bottom: 20px; }
 
 header nav { display: flex; justify-content: center; align-items: center; height: 6vh; position: fixed; width: 100%; background-color: #44a5a2; background-image: linear-gradient(#000000, #18ada6); background-size: 500vw 300vh; background-position: left top; z-index: 100; animation: moveNavBackground 10s ease-in alternate infinite; padding: 0 1em; }
@@ -591,7 +696,7 @@ section#infos h3 { text-transform: capitalize; font-size: 1.8em; text-align: cen
 .section_intro span { font-size: large; font-weight: bold; background-color: #7cd8c9; }
 
 /* ----------------------------------------Section parcours----------------------------  */
-section#experiences { width: auto; background: linear-gradient(45deg, rgba(0, 0, 0, 0.75), gray), url(/Images/newton.jpg); background-size: 100vw; background-position: center 0%; background-attachment: fixed; padding: 5vh 0; }
+section#experiences { width: auto; background: linear-gradient(45deg, rgba(0, 0, 0, 0.75), gray), url("/Images/newton.jpg"); background-size: 100vw; background-position: center 0%; background-attachment: fixed; padding: 5vh 0; }
 
 #entetediv2 { color: #000000; }
 
@@ -599,7 +704,7 @@ section#experiences { width: auto; background: linear-gradient(45deg, rgba(0, 0,
 
 #proverbe { font-size: 1.25em; text-align: center; margin-bottom: 110px; margin-top: 70px; font-weight: 300; color: #ffffff; }
 
-/*---------------T-I-ME-L-I-N-E----------------*/
+/*---------------T-I-M-E-L-I-N-E----------------*/
 div#timeline { margin: 20px auto; position: relative; width: 80%; }
 
 div#timeline:first-child:not(span.badge_icon_contain) { margin-top: -181px; }
@@ -727,7 +832,7 @@ section#knowledge { width: auto; background-color: #1A1E23; padding: 2% 0; }
 /* ------------------------------------------------------ */
 #hobby .fas { margin-right: 10px; font-size: 15px; }
 
-/*----------------------- DIv à fond vert contact----------------------*/
+/*----------------------- Div à fond vert contact----------------------*/
 .contact-btn { display: flex; flex-direction: column; justify-content: space-evenly; background: linear-gradient(45deg, rgba(34, 209, 197, 0.5), rgba(34, 209, 197, 0.75)), url("../Images/contact_me_cta_section.jpg"); background-size: cover; background-repeat: no-repeat; background-position: center; text-align: center; position: relative; height: 33vh; }
 
 .contact-btn h1 { color: white; font-weight: 300; }
@@ -736,7 +841,7 @@ section#knowledge { width: auto; background-color: #1A1E23; padding: 2% 0; }
 
 .contact-btn a:hover { color: #4ab9b2; background-color: white; transition: 0.8s; }
 
-/* ------------------Section contact (footer bas de page) ------------------------ */
+/* ------------------Footer ------------------------ */
 footer#contact { background-image: url("../Images/contact_section_bg.jpg"); background-size: cover; padding: 2% 0 1%; }
 
 footer:not(#entetediv4) { width: auto; background-color: #ffffff; display: flex; flex-direction: column; }
@@ -747,11 +852,13 @@ footer:not(#entetediv4) { width: auto; background-color: #ffffff; display: flex;
 
 input { border-radius: 2px; }
 
+input:focus { outline: none; }
+
 footer input[type="text"], footer input[type="email"] { margin-bottom: 1vh; padding: 1vh .5vw; }
 
-.col-50 { display: flex; justify-content: space-between; }
+.names_container_fifty_width { display: flex; justify-content: space-between; }
 
-.col-50 input { width: 47%; border: none; }
+.names_container_fifty_width input { width: 47.5%; border: none; }
 
 input#courriel, input#subject { border: none; }
 
@@ -763,11 +870,9 @@ input[type="submit"]#send { border-radius: 2.5px; background-color: #40c4b2; col
 
 input[type="submit"]#send:hover { background-color: #00a8a0; color: #f8f6f2; letter-spacing: 5px; }
 
-.barrelaterale { background-color: black; height: 1px; }
+footer .barrelaterale { height: 1px; border: none; background-color: rgba(255, 255, 255, 0.1); }
 
 #hr1 { width: 100%; margin-bottom: 5vh; }
-
-#hr2 { border: none; background-color: #087567; margin-top: 10px; }
 
 footer #cprt { text-align: center; color: white; font-size: 1.4em; margin-top: 44px; margin-bottom: 38px; font-weight: 500; }
 
@@ -791,40 +896,9 @@ footer > div > h3 { font-size: 2em; color: whitesmoke; text-align: center; margi
 
 .section p, a { font-weight: 700; }
 
-/* #top-left { } #top-right { } #bottom-right { } #bottom-left { } */
-.col { display: flex; flex-direction: column; }
+.form_layout_adjust { display: flex; flex-direction: column; }
 
-/*----------------------font-awesome--------------------*/
-.fa-phone { border-radius: 3px; background-color: white; color: black; font-size: 1em; padding-top: 7px; width: auto; text-align: center; border: 1.5px solid black; padding: 1%; min-width: 3vw; margin: 0 1vw 0 0; }
-
-.fa-user-plus { border-radius: 3px; background-color: black; color: white; font-size: 1em; padding-top: 7px; width: auto; text-align: center; border: 1.5px solid white; padding: 1%; min-width: 3vw; margin: 0 1vw 0 0; }
-
-.fa-envelope-open { border-radius: 3px; background-color: white; color: #1c86ff; font-size: 1em; padding-top: 7px; width: auto; text-align: center; border: 1.5px solid black; padding: 1%; min-width: 3vw; margin: 0 1vw 0 0; }
-
-.fa-map-marker-alt { border-radius: 3px; background-color: white; color: #1900ff; font-size: 1em; padding: .5vh 0; width: auto; text-align: center; border: 1.5px solid black; min-width: 3vw; margin: 0 1vw 0 0; }
-
-.fa-facebook, .fa-linkedin, .fa-twitter { color: white; font-size: 21px; }
-
-/* --------------------------- fa :hover------------------------- */
-.fa-facebook:hover { color: #466bbb; font-size: 29px; transition: 0.3s; }
-
-.fa-linkedin:hover { color: #007bb6; font-size: 29px; transition: 0.3s; }
-
-.fa-twitter:hover { color: #1da1f2; font-size: 29px; transition: 0.3s; }
-
-.fa-phone:hover { color: #3ada8a; background-color: white; }
-
-.fa-user-plus:hover { background-color: white; color: #e95500; transition: 0.4s; padding: 19px; }
-
-.fa-envelope-open:hover { transition: 0.8s; color: #1c86ff; background-color: #e9dfdf; }
-
-.fa-map-marker-alt:hover { color: #d11414; transition: 0.8s; }
-
-.fa-briefcase { font-size: 22px; color: black; margin-right: 15px; }
-
-.fa-school { font-size: 22px; margin-right: 15px; color: black; }
-
-.fa-crown { color: #ffd900; margin-right: 15px; }
+.socials_container { background-color: black; position: fixed; min-width: 5vw; min-height: 10vh; top: 50%; }
 
 /*---------------------------------------Button top------------------------------------ */
 #myBtn { display: none; position: fixed; bottom: 20px; right: 20px; width: 4vw; height: 2.25vh; z-index: 99; outline: none; color: #f3f2f2; background-color: #074e3f; cursor: auto; font-weight: thin; border: none; justify-content: center; align-items: center; transition: background-color .5s, color 0.5s .2s, transform .5s, border .1s, font-size .5s, outline-offset .25s; transition-timing-function: ease-out; outline: 1px solid transparent; }
@@ -832,77 +906,3 @@ footer > div > h3 { font-size: 2em; color: whitesmoke; text-align: center; margi
 #myBtn i { font-size: 1.2em; }
 
 #myBtn:hover { transform: scale(0.975); outline: 1px solid white; outline-offset: -3px; background-color: #15d6ac; color: black; }
-
-/* --------------------------------------------- D É C L A R A T I O N ___ A N I M A T I O N ------------------------------------------------- */
-.progress-bar { height: 1.5vh; background-color: #e9e0e0; border-radius: 7px; display: flex; flex-basis: 27.5vw; }
-
-.progress-value { background-color: #24BFBA; border-radius: 7px; height: 100%; display: inline-block; transition: 0.2s all linear; width: 90%; }
-
-.progress-bar:hover { background-color: #000000; transition: 3.9s; border: 1px solid white; }
-
-/*-----------------------Animation HTML---------------------*/
-.progress-value.html { animation: progress-html 4.5s ease-in-out forwards; -webkit-animation: progress-html 4.5s ease-in-out forwards; background-image: linear-gradient(-45deg, rgba(255, 255, 255, 0.2) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.2) 50%, rgba(255, 255, 255, 0.2) 75%, transparent 75%, transparent); }
-
-.progress-value.js { animation: progress-js 4.5s ease-in-out forwards; -webkit-animation: progress-js 4.5s ease-in-out forwards; background-image: linear-gradient(-45deg, rgba(255, 255, 255, 0.2) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.2) 50%, rgba(255, 255, 255, 0.2) 75%, transparent 75%, transparent); }
-
-.progress-value.css { animation: progress-css 4.5s ease-in-out forwards; -webkit-animation: progress-css 4.5s ease-in-out forwards; background-image: linear-gradient(-45deg, rgba(255, 255, 255, 0.2) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.2) 50%, rgba(255, 255, 255, 0.2) 75%, transparent 75%, transparent); }
-
-.progress-value.php { animation: progress-php 4.5s ease-in-out forwards; -webkit-animation: progress-php 4.5s ease-in-out forwards; background-image: linear-gradient(-45deg, rgba(255, 255, 255, 0.2) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.2) 50%, rgba(255, 255, 255, 0.2) 75%, transparent 75%, transparent); }
-
-.progress-value.nodejs { animation: progress-nodejs 4.5s ease-in-out forwards; -webkit-animation: progress-nodejs 4.5s ease-in-out forwards; background-image: linear-gradient(-45deg, rgba(255, 255, 255, 0.2) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.2) 50%, rgba(255, 255, 255, 0.2) 75%, transparent 75%, transparent); }
-
-.progress-value.sql { animation: progress-sql 4.5s ease-in-out forwards; -webkit-animation: progress-sql 4.5s ease-in-out forwards; background-image: linear-gradient(-45deg, rgba(255, 255, 255, 0.2) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.2) 50%, rgba(255, 255, 255, 0.2) 75%, transparent 75%, transparent); }
-
-.progress-value.wordpress { animation: progress-wordpress 4.5s ease-in-out forwards; -webkit-animation: progress-wordpress 4.5s ease-in-out forwards; background-image: linear-gradient(-45deg, rgba(255, 255, 255, 0.2) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.2) 50%, rgba(255, 255, 255, 0.2) 75%, transparent 75%, transparent); }
-
-.progress-value.bootstrap { animation: progress-bootstrap 4.5s ease-in-out forwards; -webkit-animation: progress-bootstrap 4.5s ease-in-out forwards; background-image: linear-gradient(-45deg, rgba(255, 255, 255, 0.2) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.2) 50%, rgba(255, 255, 255, 0.2) 75%, transparent 75%, transparent); }
-
-.progress-value.reactjs { animation: progress-react_js 4.5s ease-in-out forwards; -webkit-animation: progress-react_js 4.5s ease-in-out forwards; background-image: linear-gradient(-45deg, rgba(255, 255, 255, 0.2) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.2) 50%, rgba(255, 255, 255, 0.2) 75%, transparent 75%, transparent); }
-
-.progress-value.angularjs { animation: progress-angular_js 4.5s ease-in-out forwards; -webkit-animation: progress-angular_js 4.5s ease-in-out forwards; background-image: linear-gradient(-45deg, rgba(255, 255, 255, 0.2) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.2) 50%, rgba(255, 255, 255, 0.2) 75%, transparent 75%, transparent); }
-
-@keyframes progress-html { from { width: 0; }
-  to { width: 75%; } }
-
-/*---------------------- Animation  javascript-------------*/
-@keyframes progress-js { from { width: 0; }
-  to { width: 48%; } }
-
-/*-------------------animation css---------------*/
-@keyframes progress-css { from { width: 0; }
-  to { width: 75%; } }
-
-/*-------------------animation php---------------*/
-@keyframes progress-php { from { width: 0; }
-  to { width: 42%; } }
-
-/*-------------------animation node js---------------*/
-@keyframes progress-nodejs { from { width: 0; }
-  to { width: 25%; } }
-
-/*-------------------animation SQL---------------*/
-@keyframes progress-sql { from { width: 0; }
-  to { width: 74%; } }
-
-/*-------------------animation wordpress---------------*/
-@keyframes progress-wordpress { from { width: 0; }
-  to { width: 55%; } }
-
-/*-------------------animation bootstrap---------------*/
-@keyframes progress-bootstrap { from { width: 0; }
-  to { width: 65%; } }
-
-/*-------------------animation react js ---------------*/
-@keyframes progress-react_js { from { width: 0; }
-  to { width: 45%; } }
-
-/*-------------------animation angular---------------*/
-@keyframes progress-angular_js { from { width: 0; }
-  to { width: 40%; } }
-
-@keyframes big { from { opacity: 0;
-    transform: scale(0.2);
-    color: gold; }
-  to { opacity: 1;
-    transform: scale(1);
-    color: whitesmoke; } }
