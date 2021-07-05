@@ -834,7 +834,7 @@ footer > div > h3 { font-size: 2em; color: whitesmoke; text-align: center; margi
 #myBtn:hover { transform: scale(0.975); outline: 1px solid white; outline-offset: -3px; background-color: #15d6ac; color: black; }
 
 /* --------------------------------------------- D É C L A R A T I O N ___ A N I M A T I O N ------------------------------------------------- */
-.progress-bar { height: 1.5vh; background-color: #e9e0e0; border-radius: 10px; display: flex; flex-basis: 27.5vw; }
+.progress-bar { height: 1.5vh; background-color: #e9e0e0; border-radius: 7px; display: flex; flex-basis: 27.5vw; }
 
 .progress-value { background-color: #24BFBA; border-radius: 7px; height: 100%; display: inline-block; transition: 0.2s all linear; width: 90%; }
 
