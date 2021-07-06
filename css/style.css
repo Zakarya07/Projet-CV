@@ -854,7 +854,9 @@ footer #cprt { text-align: center; color: whitesmoke; font-weight: 400; margin: 
 
 footer > div > h3 { font-size: 2em; color: whitesmoke; text-align: center; margin: 2.5vh auto; font-weight: 500; }
 
-.map_container { display: flex; flex-grow: 1; flex-direction: row; justify-content: center; background-color: red; width: 10px; height: 100px; }
+.map_container { display: flex; flex-grow: 1; flex-direction: row; align-self: stretch; padding: .25em; }
+
+.map_container iframe { width: 100%; }
 
 .form_layout_adjust { display: flex; flex-direction: column; }
 
