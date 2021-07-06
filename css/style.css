@@ -569,13 +569,9 @@
   to { width: 40%; } }
 
 /*----------------------font-awesome--------------------*/
-.fa-phone { border-radius: 3px; background-color: white; color: black; font-size: 1em; padding-top: 7px; width: auto; text-align: center; border: 1.5px solid black; padding: 1%; min-width: 3vw; margin: 0 1vw 0 0; }
-
 .fa-map-marker-alt { border-radius: 3px; background-color: white; color: #1900ff; font-size: 1em; padding: .5vh 0; width: auto; text-align: center; border: 1.5px solid black; min-width: 3vw; margin: 0 1vw 0 0; }
 
 /* --------------------------- fa :hover------------------------- */
-.fa-phone:hover { color: #3ada8a; background-color: white; }
-
 .fa-map-marker-alt:hover { color: #d11414; transition: 0.8s; }
 
 * { margin: 0; padding: 0; box-sizing: border-box; font-family: "Open-Sans-Serif", sans-serif; }
@@ -876,7 +872,7 @@ footer > div > h3 { font-size: 2em; color: whitesmoke; text-align: center; margi
 
 .form_layout_adjust { display: flex; flex-direction: column; }
 
-.socials_container { background-color: #277c75; position: fixed; min-width: 1.5vw; min-height: 33vh; top: 50%; padding: .25vh .25vw; transform: translateY(-50%) translateX(-101%); display: flex; flex-direction: column; justify-content: space-evenly; align-items: center; }
+.socials_container { background-color: #277c75; position: fixed; min-width: 1.5vw; min-height: 33vh; top: 50%; padding: .25vh .25vw; transform: translateY(-50%) translateX(-11%); display: flex; flex-direction: column; justify-content: space-evenly; align-items: center; }
 
 .socials_container a { text-decoration: none; font-weight: 300; }
 
