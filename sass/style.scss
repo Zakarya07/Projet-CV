@@ -863,15 +863,14 @@ footer {
 .form_and_map_container {
     display: flex;
     align-items: center;
-    background-color: blue;
+    flex-direction: row-reverse;
 }
 
 .form_container {
     display: flex;
     justify-content: center;
-    flex-grow: 1;
+    flex-grow: 1.25;
     padding: 2vh 0;
-    background-color: rgb(143, 64, 0);
 }
 
 
@@ -897,7 +896,7 @@ footer input {
     justify-content: space-between;
 
     input {
-        width: 47.5%;
+        width: 49%;
         border: none;
     }
 }
@@ -975,10 +974,16 @@ footer>div>h3 {
     flex-grow: 1;
     flex-direction: row;
     align-self: stretch;
-    padding: .25em;
+    padding: 1.5em;
     
     & iframe {
         width: 100%;
+        opacity: .75;
+        transition: all .5s linear;
+    }
+    
+    &:hover iframe{
+        opacity: 1;
     }
 }
 

@@ -822,9 +822,9 @@ footer:not(#entetediv4) { width: auto; background-color: #ffffff; display: flex;
 
 #entetediv4 { text-align: center; color: #cfdada; }
 
-.form_and_map_container { display: flex; align-items: center; background-color: blue; }
+.form_and_map_container { display: flex; align-items: center; flex-direction: row-reverse; }
 
-.form_container { display: flex; justify-content: center; flex-grow: 1; padding: 2vh 0; background-color: #8f4000; }
+.form_container { display: flex; justify-content: center; flex-grow: 1.25; padding: 2vh 0; }
 
 input { border-radius: 2px; }
 
@@ -834,7 +834,7 @@ footer input[type="text"], footer input[type="email"] { margin-bottom: 1vh; padd
 
 .names_container_fifty_width { display: flex; justify-content: space-between; }
 
-.names_container_fifty_width input { width: 47.5%; border: none; }
+.names_container_fifty_width input { width: 49%; border: none; }
 
 input#courriel, input#subject { border: none; }
 
@@ -854,9 +854,11 @@ footer #cprt { text-align: center; color: whitesmoke; font-weight: 400; margin: 
 
 footer > div > h3 { font-size: 2em; color: whitesmoke; text-align: center; margin: 2.5vh auto; font-weight: 500; }
 
-.map_container { display: flex; flex-grow: 1; flex-direction: row; align-self: stretch; padding: .25em; }
+.map_container { display: flex; flex-grow: 1; flex-direction: row; align-self: stretch; padding: 1.5em; }
 
-.map_container iframe { width: 100%; }
+.map_container iframe { width: 100%; opacity: .75; transition: all .5s linear; }
+
+.map_container:hover iframe { opacity: 1; }
 
 .form_layout_adjust { display: flex; flex-direction: column; }
 
