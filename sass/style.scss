@@ -870,7 +870,11 @@ footer {
     display: flex;
     justify-content: center;
     flex-grow: 1.25;
-    padding: 2vh 0;
+    padding: 2.5vh 0;
+
+    form{
+        width: 80%;
+    }
 }
 
 

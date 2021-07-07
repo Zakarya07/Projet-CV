@@ -824,7 +824,9 @@ footer:not(#entetediv4) { width: auto; background-color: #ffffff; display: flex;
 
 .form_and_map_container { display: flex; align-items: center; flex-direction: row-reverse; }
 
-.form_container { display: flex; justify-content: center; flex-grow: 1.25; padding: 2vh 0; }
+.form_container { display: flex; justify-content: center; flex-grow: 1.25; padding: 2.5vh 0; }
+
+.form_container form { width: 80%; }
 
 input { border-radius: 2px; }
 
