@@ -862,6 +862,21 @@ section#knowledge {
 
 }
 
+// section contenant les projets ou quelques projets (photos,explication,etc...)
+
+section.project_show_container{
+    height:80vh;
+    background:url("https://source.unsplash.com/1900x1080/weekly?time");
+    background-size: cover;
+
+    h1{
+        color: white;
+        font-size: 2em;
+        text-align: center;
+        font-weight: 300;
+    }
+}
+
 /* ------------------Footer ------------------------ */
 
 footer {
