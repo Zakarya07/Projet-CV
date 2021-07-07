@@ -879,7 +879,7 @@ footer > div > h3 { font-size: 2em; color: whitesmoke; text-align: center; margi
 
 .socials_container a { text-decoration: none; font-weight: 300; }
 
-.socials_container :is(.linkedin_container, .github_container, .sololearn_container, .phone_container, .mail_container) { border-radius: 50%; background-color: #44a5a2; display: flex; justify-content: center; align-items: center; overflow: hidden; width: 1.75em; height: 1.75em; }
+.socials_container :is(.linkedin_container, .github_container, .sololearn_container, .phone_container, .mail_container) { border-radius: 50%; background-color: #44a5a2; display: flex; justify-content: center; align-items: center; overflow: hidden; width: 1.75em; height: 1.75em; transition: all 1s linear; }
 
 .socials_container :is(.linkedin_container, .github_container, .sololearn_container, .phone_container, .mail_container) i { font-size: .9em; color: white; border-radius: 50%; }
 
