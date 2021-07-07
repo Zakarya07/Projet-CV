@@ -685,7 +685,7 @@ div#timeline:first-child:not(span.badge_icon_contain) { margin-top: -181px; }
 
 div#timeline:before { content: ''; display: block; position: absolute; left: 50%; top: 0; margin: auto; width: 0.1vw; height: 100%; background: black; transform: translateX(-50%); }
 
-div#timeline article { position: relative; }
+div#timeline article { position: relative; background-color: red; border: 1px solid white; height: 50vh; overflow-y: auto; }
 
 div#timeline article:not(:last-of-type) { margin-bottom: 33vh; }
 

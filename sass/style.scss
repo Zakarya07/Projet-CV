@@ -405,6 +405,10 @@ div#timeline {
     // Article
     article {
         position: relative;
+        background-color: red;
+        border: 1px solid white;
+        height: 50vh;
+        overflow-y: auto;
 
         &:not(:last-of-type) {
             margin-bottom: 33vh;
