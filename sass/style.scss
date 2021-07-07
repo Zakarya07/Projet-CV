@@ -1020,7 +1020,7 @@ footer>div>h3 {
 // Socials container 
 
 .socials_container {
-    background-color: rgb(39, 124, 117);
+    background-color: rgb(0, 0, 0);
     position: fixed;
     min-width: 1.5vw;
     min-height: 33vh;
@@ -1031,6 +1031,19 @@ footer>div>h3 {
     flex-direction: column;
     justify-content: space-evenly;
     align-items: center;
+    transition: all .25s linear;
+
+    &:hover{
+        background-color:white;
+    }
+
+    &:hover :is(.linkedin_container i, .github_container i, .sololearn_container i, .phone_container i, .mail_container i){
+        color: rgb(255, 255, 255);
+    }
+
+    &:hover :is(.linkedin_container,.github_container,.sololearn_container,.phone_container,.mail_container){
+        background-color:rgb(0, 0, 0);
+    }
 
 
     a {
@@ -1038,17 +1051,20 @@ footer>div>h3 {
         font-weight: 300;
     }
 
-    & :is(.linkedin_container, .github_container, .sololearn_container, .mail_container) {
+    & :is(.linkedin_container, .github_container, .sololearn_container, .phone_container,.mail_container) {
         border-radius: 50%;
+        background-color:#44a5a2;
         display: flex;
         justify-content: center;
         align-items: center;
-        width: 1.5em;
         overflow: hidden;
-        height: 1.5em;
+        width: 1.75em;
+        height: 1.75em;
 
         i {
             font-size: .9em;
+            color: white;
+            border-radius: 50%;
         }
     }
 

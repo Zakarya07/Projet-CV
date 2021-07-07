@@ -868,13 +868,19 @@ footer > div > h3 { font-size: 2em; color: whitesmoke; text-align: center; margi
 
 .form_layout_adjust { display: flex; flex-direction: column; }
 
-.socials_container { background-color: #277c75; position: fixed; min-width: 1.5vw; min-height: 33vh; top: 50%; padding: .25vh .25vw; transform: translateY(-50%) translateX(-11%); display: flex; flex-direction: column; justify-content: space-evenly; align-items: center; }
+.socials_container { background-color: black; position: fixed; min-width: 1.5vw; min-height: 33vh; top: 50%; padding: .25vh .25vw; transform: translateY(-50%) translateX(-11%); display: flex; flex-direction: column; justify-content: space-evenly; align-items: center; transition: all .25s linear; }
+
+.socials_container:hover { background-color: white; }
+
+.socials_container:hover :is(.linkedin_container i, .github_container i, .sololearn_container i, .phone_container i, .mail_container i) { color: white; }
+
+.socials_container:hover :is(.linkedin_container, .github_container, .sololearn_container, .phone_container, .mail_container) { background-color: black; }
 
 .socials_container a { text-decoration: none; font-weight: 300; }
 
-.socials_container :is(.linkedin_container, .github_container, .sololearn_container, .mail_container) { border-radius: 50%; display: flex; justify-content: center; align-items: center; width: 1.5em; overflow: hidden; height: 1.5em; }
+.socials_container :is(.linkedin_container, .github_container, .sololearn_container, .phone_container, .mail_container) { border-radius: 50%; background-color: #44a5a2; display: flex; justify-content: center; align-items: center; overflow: hidden; width: 1.75em; height: 1.75em; }
 
-.socials_container :is(.linkedin_container, .github_container, .sololearn_container, .mail_container) i { font-size: .9em; }
+.socials_container :is(.linkedin_container, .github_container, .sololearn_container, .phone_container, .mail_container) i { font-size: .9em; color: white; border-radius: 50%; }
 
 .socials_container .arrow_container { font-size: .55em; position: absolute; width: 20px; height: 20px; background-color: black; right: 0; transform: translateX(100%) translateY(-50%); display: flex; justify-content: center; align-items: center; top: 50%; transition: all .25s ease-in; cursor: pointer; }
 
