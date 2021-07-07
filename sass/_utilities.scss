@@ -1,9 +1,14 @@
-// Animation for the navbar (move the backgroud-position from 'left top' to 'right bottom')
-@keyframes moveNavBackground{
-    100%{
-        background-position: right bottom;
+// Animation for the navbar (move the backgroud-position)
+
+@keyframes moveNavBackground {
+    50% {
+       background-position: 100% 100%;
+        } 
+ 
+        100%{
+          background-position:95% 85%;
+        }
     }
-}
 
 // Animation for the h1 of the header
 
