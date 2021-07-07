@@ -883,9 +883,9 @@ footer > div > h3 { font-size: 2em; color: whitesmoke; text-align: center; margi
 
 .socials_container :is(.linkedin_container, .github_container, .sololearn_container, .phone_container, .mail_container) i { font-size: .9em; color: white; border-radius: 50%; }
 
-.socials_container .arrow_container { font-size: .55em; position: absolute; width: 20px; height: 20px; background-color: black; right: 0; transform: translateX(100%) translateY(-50%); display: flex; justify-content: center; align-items: center; top: 50%; transition: all .25s ease-in; cursor: pointer; }
+.socials_container .arrow_container { font-size: .55em; position: absolute; width: 20px; height: 20px; background-color: white; color: #00a8a0; right: 0; transform: translateX(100%) translateY(-50%); display: flex; justify-content: center; align-items: center; top: 50%; transition: all .25s ease-in; cursor: pointer; }
 
-.socials_container .arrow_container:hover { color: #00a8a0; }
+.socials_container .arrow_container:hover { background-color: #00a8a0; color: white; }
 
 /*---------------------------------------Button top------------------------------------ */
 #myBtn { display: none; position: fixed; bottom: 20px; right: 20px; width: 4vw; height: 2.25vh; z-index: 99; outline: none; color: #f3f2f2; background-color: #074e3f; cursor: auto; font-weight: thin; border: none; justify-content: center; align-items: center; transition: background-color .5s, color 0.5s .2s, transform .5s, border .1s, font-size .5s, outline-offset .25s; transition-timing-function: ease-out; outline: 1px solid transparent; }
