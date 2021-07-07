@@ -148,24 +148,27 @@ header {
         }
     }
 
-    h1 {
+     h1 {
         text-align: center;
         padding-top: 330px;
         text-transform: capitalize;
         color: #fff;
         font-weight: 300;
-        font-size: 5em;
+        font-size: 3.25em;
         letter-spacing: 1.5px;
-        animation: big 1.5s linear;
+        opacity: 0;
+        animation: big 1.5s 1s linear forwards;
     }
-
+    
     h2 {
         text-transform: uppercase;
         text-align: center;
         padding-top: 35px;
         letter-spacing: 1px;
-        font-size: 2em;
+        font-size: 1.25em;
         font-weight: 300;
+        opacity: 0;
+        animation: big .75s 3s ease-in forwards alternate 3;
     }
 }
 
