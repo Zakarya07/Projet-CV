@@ -51,7 +51,7 @@ header {
         position: fixed;
         width: 100%;
         background-color: #44a5a2;
-        background-image: linear-gradient(#000000, #20a19d,#3a63b0,#349eac,#8d8f77);
+        background-image: linear-gradient(#000000, #20a19d, #3a63b0, #349eac, #8d8f77);
         background-size: 500vw 500vh;
         background-position: 0% 0%;
         z-index: 100;
@@ -74,22 +74,29 @@ header {
     }
 
     nav div {
-        &.portfolio_contain {
+        &.logo_contain {
             display: flex;
             flex-direction: row;
-            align-items: center;
             justify-content: flex-start;
-            height: 100%;
+            align-items: center;
             padding: 0 1em;
-
+            height: 100%;
             a {
                 transition: all .25s linear;
-            }
+                height: 50%;
+                display: flex;
+                justify-content: center;
+                align-items: center;            }
 
             a:hover {
                 background-color: white;
                 color: black;
                 padding: .1em .25em;
+            }
+
+            img {
+                height: 100%;
+                object-fit: contain;
             }
         }
 
@@ -120,7 +127,7 @@ header {
                     }
 
                     // Set the width of the ::after pseudo element of the a (the little line under the <a>, not visible by default because of width at 0%) to 100% to see it
-                    &:hover a::after{
+                    &:hover a::after {
                         width: 100%;
                     }
 
@@ -130,7 +137,7 @@ header {
                         margin: 0 2em;
                         font-weight: 400;
                         position: relative;
-                        
+
                         // ::after pseudo-element (little line) style
                         &::after {
                             transition: all .25s linear;
@@ -148,7 +155,7 @@ header {
         }
     }
 
-     h1 {
+    h1 {
         text-align: center;
         padding-top: 330px;
         text-transform: capitalize;
@@ -159,7 +166,7 @@ header {
         opacity: 0;
         animation: big 1.5s 1s linear forwards;
     }
-    
+
     h2 {
         text-transform: uppercase;
         text-align: center;
@@ -864,16 +871,22 @@ section#knowledge {
 
 // section contenant les projets ou quelques projets (photos,explication,etc...)
 
-section.project_show_container{
-    height:80vh;
-    background:url("https://source.unsplash.com/1900x1080/weekly?time");
+section.project_show_container {
+    height: 90vh;
+    background: url("https://source.unsplash.com/1900x1080/weekly?time");
     background-size: cover;
 
-    h1{
+    h1 {
         color: white;
-        font-size: 2em;
+        font-size: 6em;
         text-align: center;
         font-weight: 300;
+        position: relative;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        background-color: rgba(12, 11, 12,.9);
+        display: inline-block;
     }
 }
 
@@ -1051,16 +1064,16 @@ footer>div>h3 {
     align-items: center;
     transition: all .25s linear;
 
-    &:hover{
-        background-color:white;
+    &:hover {
+        background-color: white;
     }
 
-    &:hover :is(.linkedin_container i, .github_container i, .sololearn_container i, .phone_container i, .mail_container i){
+    &:hover :is(.linkedin_container i, .github_container i, .sololearn_container i, .phone_container i, .mail_container i) {
         color: rgb(255, 255, 255);
     }
 
-    &:hover :is(.linkedin_container,.github_container,.sololearn_container,.phone_container,.mail_container){
-        background-color:rgb(0, 0, 0);
+    &:hover :is(.linkedin_container, .github_container, .sololearn_container, .phone_container, .mail_container) {
+        background-color: rgb(0, 0, 0);
     }
 
 
@@ -1069,9 +1082,9 @@ footer>div>h3 {
         font-weight: 300;
     }
 
-    & :is(.linkedin_container, .github_container, .sololearn_container, .phone_container,.mail_container) {
+    & :is(.linkedin_container, .github_container, .sololearn_container, .phone_container, .mail_container) {
         border-radius: 50%;
-        background-color:#44a5a2;
+        background-color: #44a5a2;
         display: flex;
         justify-content: center;
         align-items: center;
