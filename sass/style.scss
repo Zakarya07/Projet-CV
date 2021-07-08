@@ -1,4 +1,4 @@
-@import "responsive", "circle", "utilities", 'fonts', 'progress_bar_and_animation', 'font-awesome_icons_custom';
+@import "responsive", "circle", "site_animations", 'fonts', 'progress_bar_and_animation', 'font-awesome_icons_custom';
 
 
 * {
@@ -47,15 +47,15 @@ header {
         display: flex;
         justify-content: center;
         align-items: center;
-        height: 7vh;
+        height: 6vh;
         position: fixed;
         width: 100%;
-        background-color: #44a5a2;
-        background-image: linear-gradient(#000000, #20a19d, #3a63b0, #349eac, #8d8f77);
-        background-size: 500vw 500vh;
+        background-color: #121212;
+        background-image: linear-gradient(#000000,#8d8f77, #178784, #173a7b, #000000,#19908d);
+        background-size: 250vw 300vh;
         background-position: 0% 0%;
         z-index: 100;
-        animation: moveNavBackground 90s ease-in alternate infinite;
+        animation: moveNavBackground 33s ease-in alternate infinite;
         padding: 0 1em;
 
         .surounder {
