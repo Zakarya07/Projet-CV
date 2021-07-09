@@ -1,0 +1,9 @@
+// class that show or hide (toggle) the socials container
+.socials_container.socials_container_active{
+    transform: translateY(-50%) translateX(0%) !important;
+}
+// class that turn the arrow icon to invert the direction (to tell that is gonna open or close the socials_container)
+.socials_container > .arrow_container > i.arrow_active{
+    transform:rotate(180deg) !important;
+}
+

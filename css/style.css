@@ -574,6 +574,10 @@
 /* --------------------------- fa :hover------------------------- */
 .fa-map-marker-alt:hover { color: #d11414; transition: 0.8s; }
 
+.socials_container.socials_container_active { transform: translateY(-50%) translateX(0%) !important; }
+
+.socials_container > .arrow_container > i.arrow_active { transform: rotate(180deg) !important; }
+
 * { margin: 0; padding: 0; box-sizing: border-box; font-family: "Open-Sans-Serif", sans-serif; }
 
 html { scroll-behavior: smooth; }
@@ -891,6 +895,8 @@ footer > div > h3 { font-size: 2em; color: whitesmoke; text-align: center; margi
 .socials_container .arrow_container { font-size: .55em; position: absolute; width: 20px; height: 20px; background-color: white; color: #00a8a0; right: 0; transform: translateX(100%) translateY(-50%); display: flex; justify-content: center; align-items: center; top: 50%; transition: all .25s ease-in; cursor: pointer; }
 
 .socials_container .arrow_container:hover { background-color: #00a8a0; color: white; }
+
+.socials_container .arrow_container i { transition: all .33s linear; }
 
 /*---------------------------------------Button top------------------------------------ */
 #myBtn { display: none; position: fixed; bottom: 20px; right: 20px; width: 4vw; height: 2.25vh; z-index: 99; outline: none; color: #f3f2f2; background-color: #074e3f; cursor: auto; font-weight: thin; border: none; justify-content: center; align-items: center; transition: background-color .5s, color 0.5s .2s, transform .5s, border .1s, font-size .5s, outline-offset .25s; transition-timing-function: ease-out; outline: 1px solid transparent; }

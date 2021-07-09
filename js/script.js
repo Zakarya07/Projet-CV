@@ -1,11 +1,8 @@
-/*          Top Button           */ 
-
+/*          Top Button           */
 
 // When the user scrolls down 20px from the top of the document, show the button
-window.onscroll = function() {
+window.onscroll = function () {
   scrollFunction()
-  navDisplay()
-
 };
 
 function scrollFunction() {
@@ -23,55 +20,75 @@ function topFunction() {
 }
 
 
-// Ajout de la date (mois/année) dans le copyright du Footer dynamiquement 
-let copyrightDate=document.querySelector(".copyrightDate");
+/*          DATE          */
 
-let date= new Date();
-let month=date.getMonth()+1;
-let currentYear=date.getFullYear();
+// Add of the date (month/year) dynamically in the footer's copyright
+let copyrightDate = document.querySelector(".copyrightDate");
+
+let date = new Date();
+let month = date.getMonth() + 1;
+let currentYear = date.getFullYear();
 switch (month) {
   case 1:
-    month="Janvier"
+    month = "Janvier"
     break;
   case 2:
-    month="Février"
+    month = "Février"
     break;
   case 3:
-    month="Mars"
+    month = "Mars"
     break;
   case 4:
-    month="Avril"
+    month = "Avril"
     break;
   case 5:
-    month="Mai"
+    month = "Mai"
     break;
   case 6:
-    month="Juin"
+    month = "Juin"
     break;
   case 7:
-    month="Juillet"
+    month = "Juillet"
     break;
   case 8:
-    month="Août"
+    month = "Août"
     break;
   case 9:
-    month="Septembre"
+    month = "Septembre"
     break;
   case 10:
-    month="Octobre"
+    month = "Octobre"
     break;
   case 11:
-    month="Novembre"
+    month = "Novembre"
     break;
   case 12:
-    month="Décembre"
+    month = "Décembre"
     break;
 
   default:
-  month;
+    month;
     break;
 }
-
-copyrightDate.innerHTML=` ${month} ${currentYear}`;
+copyrightDate.innerHTML = ` ${month} ${currentYear}`;
 // alert(month);
+
+/*         SOCIALS CONTAINER SHOW TOGGLE          */
+
+// get the arrow icon container
+let arrowShow = document.querySelector(".socials_container > .arrow_container");
+// get the arrow icon
+let arrowShowIcon = document.querySelector(".socials_container > .arrow_container i");
+// get the social container
+let socials_container = document.querySelector(".socials_container");
+
+// add click event 
+arrowShow.addEventListener("click",()=>{
+  // toggle the socials_container_active class to the socials_container 
+  socials_container.classList.toggle("socials_container_active");
+  // toggle the arrow_active class to the arrow icon
+  setTimeout(() => {
+    arrowShowIcon.classList.toggle("arrow_active");
+  }, 500);
+})
 

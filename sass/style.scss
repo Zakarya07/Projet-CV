@@ -1,4 +1,4 @@
-@import "responsive", "circle", "site_animations", 'fonts', 'progress_bar_and_animation', 'font-awesome_icons_custom';
+@import "responsive", "circle", "site_animations", 'fonts', 'progress_bar_and_animation', 'font-awesome_icons_custom','javascript_animation_add';
 
 
 * {
@@ -1123,6 +1123,10 @@ footer>div>h3 {
         &:hover {
             background-color: #00a8a0;
             color: rgb(255, 255, 255);
+        }
+
+        i{
+            transition: all .33s linear;
         }
     }
 
