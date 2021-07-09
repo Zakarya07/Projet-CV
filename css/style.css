@@ -691,7 +691,7 @@ div#timeline:first-child:not(span.badge_icon_contain) { margin-top: -181px; }
 
 div#timeline:before { content: ''; display: block; position: absolute; left: 50%; top: 0; margin: auto; width: 0.1vw; height: 100%; background: black; transform: translateX(-50%); }
 
-div#timeline article { position: relative; background-color: red; border: 1px solid white; height: 50vh; overflow-y: auto; }
+div#timeline article { position: relative; background-color: #2f00ff; border: 1px solid white; height: 52.5vh; overflow-y: auto; }
 
 div#timeline article:not(:last-of-type) { margin-bottom: 33vh; }
 
@@ -701,13 +701,13 @@ div#timeline article:hover .around .img-contain { box-shadow: 1px 1px 10px 1px r
 
 div#timeline article:after { content: ''; display: block; clear: both; }
 
-div#timeline article div.inner { padding: .5em; display: flex; justify-content: space-between; }
+div#timeline article div.inner { padding: .5em; display: flex; justify-content: space-between; border: 3px solid yellow; height: 100%; }
 
 div#timeline article div.inner span.badge_icon_contain { width: .1vw; height: 3vh; position: absolute; top: 50%; left: 50%; color: white; background: whitesmoke; transform: translateX(-50%) translateY(-50%); }
 
-div#timeline article div.inner .title_container { display: flex; flex-direction: column; justify-content: center; align-items: flex-end; width: 47.5%; padding: 0.5em; }
+div#timeline article div.inner .title_container { display: flex; flex-direction: column; justify-content: center; align-items: flex-end; width: 47.5%; padding: 0.5em; background: orange; }
 
-div#timeline article div.inner .title_container :is(h1, h2) { word-spacing: 5px; text-transform: uppercase; letter-spacing: 2px; }
+div#timeline article div.inner .title_container :is(h1, h2) { word-spacing: 5px; text-transform: uppercase; letter-spacing: 2px; border-top: 2px solid red; }
 
 div#timeline article div.inner .title_container h1 { font-size: 1em; font-weight: 400; }
 
