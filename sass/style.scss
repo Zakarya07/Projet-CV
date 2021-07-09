@@ -55,7 +55,7 @@ header {
         background-size: 250vw 300vh;
         background-position: 0% 0%;
         z-index: 100;
-        animation: moveNavBackground 15s ease-in alternate infinite;
+        animation: moveNavBackground 33s ease-in alternate infinite;
         padding: 0 1em;
 
         .surounder {
@@ -1058,7 +1058,7 @@ footer>div>h3 {
     min-height: 33vh;
     top: 50%;
     padding: .25vh .25vw;
-    transform: translateY(-50%) translateX(-11%);
+    transform: translateY(-50%) translateX(-101%);
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
