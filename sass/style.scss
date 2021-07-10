@@ -83,9 +83,10 @@ header {
             height: 100%;
 
             &:hover img{
-               filter:contrast(115%) brightness(105%) hue-rotate(-10deg);
+                filter: sepia(20%) contrast(110%);
+                transform: scale(1.15);
             }
-
+        
             a {
                 height: 75%;
                 display: flex;
@@ -95,8 +96,8 @@ header {
             
             
             img {
-                transition: all 1s linear;
-                height: 100%;
+                transition: all .25s linear;
+                height: 75%;
                 object-fit: contain;
             }
         }
