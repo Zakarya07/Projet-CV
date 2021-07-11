@@ -433,8 +433,6 @@ div#timeline {
     // Article
     article {
         position: relative;
-        background-color: rgb(47, 0, 255);
-        border: 1px solid white;
         height:52.5vh;
         overflow-y: auto;
 
@@ -462,18 +460,18 @@ div#timeline {
             padding: .5em;
             display: flex;
             justify-content: space-between;
-            border: 3px solid yellow;
             height: 100%;
 
             span.badge_icon_contain {
                 width: .1vw;
-                height: 3vh;
+                height: 7.5vh;
                 position: absolute;
                 top: 50%;
                 left: 50%;
                 color: white;
                 background: whitesmoke;
                 transform: translateX(-50%) translateY(-50%);
+                transition: all .5s linear;
 
             }
 
@@ -484,13 +482,12 @@ div#timeline {
                 align-items: flex-end;
                 width: 47.5%;
                 padding: 0.5em;
-                background: orange;
 
                 :is(h1, h2) {
                     word-spacing: 5px;
                     text-transform: uppercase;
                     letter-spacing: 2px;
-                    border-top: 2px solid red;
+                    transition: all 1.5s linear;
                 }
 
                 h1 {

@@ -2,7 +2,9 @@
 
 // When the user scrolls down 20px from the top of the document, show the button
 window.onscroll = function () {
-  scrollFunction()
+  scrollFunction();
+  animateArticle();
+
 };
 
 function scrollFunction() {
@@ -71,7 +73,6 @@ switch (month) {
     break;
 }
 copyrightDate.innerHTML = ` ${month} ${currentYear}`;
-// alert(month);
 
 /*         SOCIALS CONTAINER SHOW TOGGLE          */
 
@@ -91,4 +92,37 @@ arrowShow.addEventListener("click",()=>{
     arrowShowIcon.classList.toggle("arrow_active");
   }, 500);
 })
+
+/*  ARTICLES TITLES MOVE */
+
+// get all the articles
+let articles = document.querySelectorAll("article");
+// get the height of the window
+let windowHeight = window.innerHeight;
+
+function animateArticle() {
+  articles.forEach((article,index)=>{
+    index+=1;
+    let articlePosition = Math.floor(article.getBoundingClientRect().top * 2);
+    
+    if(articlePosition < windowHeight){
+      let badge = article.querySelector(".inner > span");
+      let experienceName = article.querySelector(".inner > .title_container h1");
+      let societyName = article.querySelector(".inner > .title_container h2");
+      badge.classList.add("badge_active");
+      experienceName.classList.add("experience_name_active");
+      societyName.classList.add("society_name_active");
+    }
+    if(articlePosition > windowHeight){
+      let badge = article.querySelector(".inner > span");
+      let experienceName = article.querySelector(".inner > .title_container h1");
+      let societyName = article.querySelector(".inner > .title_container h2");
+      badge.classList.remove("badge_active");
+      experienceName.classList.remove("experience_name_active");
+      societyName.classList.remove("society_name_active");
+    }
+    
+  })  
+  console.log('_______________')
+}
 

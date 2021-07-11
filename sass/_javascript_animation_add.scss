@@ -7,3 +7,20 @@
     transform:rotate(180deg) !important;
 }
 
+// class for the badge of the article 
+#timeline article div.inner span.badge_icon_contain.badge_active{
+    // I specify all the selector to put higher specifity than the original style (style.scss)
+    background:rgb(49, 179, 172);
+    top: 61% ;
+}
+
+// class for the experience name
+.experience_name_active{
+    transform: translateY(6vh) !important;
+}
+// class for the society name 
+.society_name_active{
+    transform: translateY(6vh) !important;
+}
+
+
