@@ -672,6 +672,8 @@ section#knowledge {
     flex-basis: 50%;
     flex-grow: 1;
     justify-content: center;
+    transition: all .5s linear;
+    box-shadow: 0px 1px 10px -2.5px rgb(255, 255, 255) inset;
 
     &:nth-last-of-type(-n+2) {
         margin-bottom: 0;

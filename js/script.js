@@ -4,7 +4,7 @@
 window.onscroll = function () {
   scrollFunction();
   animateArticle();
-
+  animateProgressBar();
 };
 
 function scrollFunction() {
@@ -98,6 +98,7 @@ arrowShow.addEventListener("click",()=>{
 // get all the articles
 let articles = document.querySelectorAll("article");
 // get the height of the window
+// (we use it for the article and the progress bars too)
 let windowHeight = window.innerHeight;
 
 function animateArticle() {
@@ -109,9 +110,9 @@ function animateArticle() {
       let badge = article.querySelector(".inner > span");
       let experienceName = article.querySelector(".inner > .title_container h1");
       let societyName = article.querySelector(".inner > .title_container h2");
-        badge.classList.add("badge_active");
-        experienceName.classList.add("experience_name_active");
-        societyName.classList.add("society_name_active");
+      badge.classList.add("badge_active");
+      experienceName.classList.add("experience_name_active");
+      societyName.classList.add("society_name_active");
     }
     if(articlePosition > windowHeight){
       let badge = article.querySelector(".inner > span");
@@ -123,4 +124,24 @@ function animateArticle() {
     }
   })  
 }
+
+/*  SKILLS PROGRESS BAR FILL ANIMATION */
+
+const progress_bars = document.querySelectorAll(".knowledge-item");
+
+function animateProgressBar() {
+  progress_bars.forEach((progress_bar,index)=>{
+    index+=1;
+    let progress_bar_position = Math.floor(progress_bar.getBoundingClientRect().bottom * 1.075);
+    if (progress_bar_position < windowHeight) {
+      let progress_bar_value = progress_bar.querySelector(".progress-bar > span");
+      progress_bar_value.classList.add("progress-value");
+      setTimeout(() => {
+        // progress_bar.style="box-shadow: rgb(21 217 255) 0px 1px 10px -2.5px inset;";
+      }, 500);
+   }
+  })
+  console.log("___________________");
+}
+
 

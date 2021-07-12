@@ -509,25 +509,25 @@
 .progress-bar:hover { background-color: #000000; transition: 3.9s; border: 1px solid white; }
 
 /*-----------------------Animation Call---------------------*/
-.progress-value.html { animation: progress-html 4.5s ease-in-out forwards; -webkit-animation: progress-html 4.5s ease-in-out forwards; background-image: linear-gradient(-45deg, rgba(255, 255, 255, 0.2) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.2) 50%, rgba(255, 255, 255, 0.2) 75%, transparent 75%, transparent); }
+.progress-value.html { animation: progress-html 2s ease-in-out forwards; background-image: linear-gradient(-45deg, rgba(255, 255, 255, 0.2) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.2) 50%, rgba(255, 255, 255, 0.2) 75%, transparent 75%, transparent); }
 
-.progress-value.js { animation: progress-js 4.5s ease-in-out forwards; -webkit-animation: progress-js 4.5s ease-in-out forwards; background-image: linear-gradient(-45deg, rgba(255, 255, 255, 0.2) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.2) 50%, rgba(255, 255, 255, 0.2) 75%, transparent 75%, transparent); }
+.progress-value.js { animation: progress-js 2s ease-in-out forwards; background-image: linear-gradient(-45deg, rgba(255, 255, 255, 0.2) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.2) 50%, rgba(255, 255, 255, 0.2) 75%, transparent 75%, transparent); }
 
-.progress-value.css { animation: progress-css 4.5s ease-in-out forwards; -webkit-animation: progress-css 4.5s ease-in-out forwards; background-image: linear-gradient(-45deg, rgba(255, 255, 255, 0.2) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.2) 50%, rgba(255, 255, 255, 0.2) 75%, transparent 75%, transparent); }
+.progress-value.css { animation: progress-css 2s ease-in-out forwards; background-image: linear-gradient(-45deg, rgba(255, 255, 255, 0.2) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.2) 50%, rgba(255, 255, 255, 0.2) 75%, transparent 75%, transparent); }
 
-.progress-value.php { animation: progress-php 4.5s ease-in-out forwards; -webkit-animation: progress-php 4.5s ease-in-out forwards; background-image: linear-gradient(-45deg, rgba(255, 255, 255, 0.2) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.2) 50%, rgba(255, 255, 255, 0.2) 75%, transparent 75%, transparent); }
+.progress-value.php { animation: progress-php 2s ease-in-out forwards; background-image: linear-gradient(-45deg, rgba(255, 255, 255, 0.2) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.2) 50%, rgba(255, 255, 255, 0.2) 75%, transparent 75%, transparent); }
 
-.progress-value.nodejs { animation: progress-nodejs 4.5s ease-in-out forwards; -webkit-animation: progress-nodejs 4.5s ease-in-out forwards; background-image: linear-gradient(-45deg, rgba(255, 255, 255, 0.2) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.2) 50%, rgba(255, 255, 255, 0.2) 75%, transparent 75%, transparent); }
+.progress-value.nodejs { animation: progress-nodejs 2s ease-in-out forwards; background-image: linear-gradient(-45deg, rgba(255, 255, 255, 0.2) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.2) 50%, rgba(255, 255, 255, 0.2) 75%, transparent 75%, transparent); }
 
-.progress-value.sql { animation: progress-sql 4.5s ease-in-out forwards; -webkit-animation: progress-sql 4.5s ease-in-out forwards; background-image: linear-gradient(-45deg, rgba(255, 255, 255, 0.2) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.2) 50%, rgba(255, 255, 255, 0.2) 75%, transparent 75%, transparent); }
+.progress-value.sql { animation: progress-sql 2s ease-in-out forwards; background-image: linear-gradient(-45deg, rgba(255, 255, 255, 0.2) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.2) 50%, rgba(255, 255, 255, 0.2) 75%, transparent 75%, transparent); }
 
-.progress-value.wordpress { animation: progress-wordpress 4.5s ease-in-out forwards; -webkit-animation: progress-wordpress 4.5s ease-in-out forwards; background-image: linear-gradient(-45deg, rgba(255, 255, 255, 0.2) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.2) 50%, rgba(255, 255, 255, 0.2) 75%, transparent 75%, transparent); }
+.progress-value.wordpress { animation: progress-wordpress 2s ease-in-out forwards; background-image: linear-gradient(-45deg, rgba(255, 255, 255, 0.2) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.2) 50%, rgba(255, 255, 255, 0.2) 75%, transparent 75%, transparent); }
 
-.progress-value.bootstrap { animation: progress-bootstrap 4.5s ease-in-out forwards; -webkit-animation: progress-bootstrap 4.5s ease-in-out forwards; background-image: linear-gradient(-45deg, rgba(255, 255, 255, 0.2) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.2) 50%, rgba(255, 255, 255, 0.2) 75%, transparent 75%, transparent); }
+.progress-value.bootstrap { animation: progress-bootstrap 2s ease-in-out forwards; background-image: linear-gradient(-45deg, rgba(255, 255, 255, 0.2) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.2) 50%, rgba(255, 255, 255, 0.2) 75%, transparent 75%, transparent); }
 
-.progress-value.reactjs { animation: progress-react_js 4.5s ease-in-out forwards; -webkit-animation: progress-react_js 4.5s ease-in-out forwards; background-image: linear-gradient(-45deg, rgba(255, 255, 255, 0.2) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.2) 50%, rgba(255, 255, 255, 0.2) 75%, transparent 75%, transparent); }
+.progress-value.reactjs { animation: progress-react_js 2s ease-in-out forwards; background-image: linear-gradient(-45deg, rgba(255, 255, 255, 0.2) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.2) 50%, rgba(255, 255, 255, 0.2) 75%, transparent 75%, transparent); }
 
-.progress-value.angularjs { animation: progress-angular_js 4.5s ease-in-out forwards; -webkit-animation: progress-angular_js 4.5s ease-in-out forwards; background-image: linear-gradient(-45deg, rgba(255, 255, 255, 0.2) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.2) 50%, rgba(255, 255, 255, 0.2) 75%, transparent 75%, transparent); }
+.progress-value.angularjs { animation: progress-angular_js 2s ease-in-out forwards; background-image: linear-gradient(-45deg, rgba(255, 255, 255, 0.2) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.2) 50%, rgba(255, 255, 255, 0.2) 75%, transparent 75%, transparent); }
 
 @keyframes progress-html { from { width: 0; }
   to { width: 75%; } }
@@ -770,7 +770,7 @@ section#knowledge { width: auto; background-color: #1A1E23; padding: 2% 0; }
 
 #knowledge-items > p:not(:first-of-type) { margin-top: 5vh; }
 
-.knowledge-item { margin-bottom: 3.5vh; display: flex; padding: .25em; align-items: center; flex-basis: 50%; flex-grow: 1; justify-content: center; }
+.knowledge-item { margin-bottom: 3.5vh; display: flex; padding: .25em; align-items: center; flex-basis: 50%; flex-grow: 1; justify-content: center; transition: all .5s linear; box-shadow: 0px 1px 10px -2.5px white inset; }
 
 .knowledge-item:nth-last-of-type(-n+2) { margin-bottom: 0; }
 
