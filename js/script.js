@@ -109,9 +109,9 @@ function animateArticle() {
       let badge = article.querySelector(".inner > span");
       let experienceName = article.querySelector(".inner > .title_container h1");
       let societyName = article.querySelector(".inner > .title_container h2");
-      badge.classList.add("badge_active");
-      experienceName.classList.add("experience_name_active");
-      societyName.classList.add("society_name_active");
+        badge.classList.add("badge_active");
+        experienceName.classList.add("experience_name_active");
+        societyName.classList.add("society_name_active");
     }
     if(articlePosition > windowHeight){
       let badge = article.querySelector(".inner > span");
@@ -121,8 +121,6 @@ function animateArticle() {
       experienceName.classList.remove("experience_name_active");
       societyName.classList.remove("society_name_active");
     }
-    
   })  
-  console.log('_______________')
 }
 

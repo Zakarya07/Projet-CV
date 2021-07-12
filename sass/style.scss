@@ -1103,20 +1103,20 @@ footer>div>h3 {
     }
 
     .arrow_container {
-        font-size: .55em;
-        position: absolute;
-        width: 20px;
-        height: 20px;
-        background-color: rgb(255, 255, 255);
-        color: #00a8a0;
-        right: 0;
-        transform: translateX(100%) translateY(-50%);
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        top: 50%;
-        transition: all .25s ease-in;
-        cursor: pointer;
+        font-size: .5em;
+    position: absolute;
+    width: 10px;
+    height: 33px;
+    background-color: white;
+    color: #00a8a0;
+    right: 0;
+    transform: translateX(100%) translateY(-50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 50%;
+    transition: all .25s ease-in;
+    cursor: pointer;
 
         &:hover {
             background-color: #00a8a0;
