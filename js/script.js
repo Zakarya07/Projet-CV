@@ -104,7 +104,7 @@ let windowHeight = window.innerHeight;
 function animateArticle() {
   articles.forEach((article,index)=>{
     index+=1;
-    let articlePosition = Math.floor(article.getBoundingClientRect().top * 2);
+    let articlePosition = Math.floor(article.getBoundingClientRect().top / .33);
     
     if(articlePosition < windowHeight){
       let badge = article.querySelector(".inner > span");
@@ -136,12 +136,8 @@ function animateProgressBar() {
     if (progress_bar_position < windowHeight) {
       let progress_bar_value = progress_bar.querySelector(".progress-bar > span");
       progress_bar_value.classList.add("progress-value");
-      setTimeout(() => {
-        // progress_bar.style="box-shadow: rgb(21 217 255) 0px 1px 10px -2.5px inset;";
-      }, 500);
    }
   })
-  console.log("___________________");
 }
 
 

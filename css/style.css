@@ -580,9 +580,9 @@
 
 #timeline article div.inner span.badge_icon_contain.badge_active { background: #31b3ac; top: 61%; }
 
-.experience_name_active { transform: translateY(6vh) !important; }
+.experience_name_active { transform: translateY(6vh) !important; opacity: 1 !important; }
 
-.society_name_active { transform: translateY(6vh) !important; }
+.society_name_active { transform: translateY(6vh) !important; opacity: 1 !important; }
 
 * { margin: 0; padding: 0; box-sizing: border-box; font-family: "Open-Sans-Serif", sans-serif; }
 
@@ -717,7 +717,7 @@ div#timeline article div.inner span.badge_icon_contain { width: .1vw; height: 7.
 
 div#timeline article div.inner .title_container { display: flex; flex-direction: column; justify-content: center; align-items: flex-end; width: 47.5%; padding: 0.5em; }
 
-div#timeline article div.inner .title_container :is(h1, h2) { word-spacing: 5px; text-transform: uppercase; letter-spacing: 2px; transition: all 1.5s linear; }
+div#timeline article div.inner .title_container :is(h1, h2) { word-spacing: 5px; text-transform: uppercase; letter-spacing: 2px; transition: all .75s linear; opacity: 0; }
 
 div#timeline article div.inner .title_container h1 { font-size: 1em; font-weight: 400; }
 

@@ -487,7 +487,8 @@ div#timeline {
                     word-spacing: 5px;
                     text-transform: uppercase;
                     letter-spacing: 2px;
-                    transition: all 1.5s linear;
+                    transition: all .75s linear;
+                    opacity: 0;
                 }
 
                 h1 {
