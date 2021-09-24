@@ -553,6 +553,10 @@ div#timeline {
 
         }
 
+        &:nth-child(2n+2) div.inner {
+            float: right;
+        }
+
         div.inner div.div-bg-title-date {
             text-align: center;
             color: black;
